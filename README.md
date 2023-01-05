@@ -1,3 +1,3 @@
 # [My Portfolio Website](https://cantuncr.github.io/)
 
-![My-Website-Preview](https://lh3.googleusercontent.com/pw/AL9nZEWkY2bL6DK9f8tcYQNHuGRqiC3gRbGcmSdRdFQNyji6fejWGF_-yV-87nUl28jUe8ub315Ll2R0KxQ4jdZ1Ivhr74Z6y5QSxT5Rlpkdm2gwp0ThhXEO1WVCStOyjfDUppWGbi-zFp-xZHL38x_bwPPDPQ=w1600-h740-no)
+![My-Website-Preview](https://lh3.googleusercontent.com/pw/AL9nZEV1uhTENKsN2gJ3PQLvrkXCB2zwLfHxvqRum5_YJ5aB5tb9u09CiqYRt1iuC-xOMzn006N4kDWq9GCaOFoVtGXBK5NOogT_7UR3xWntC14JT-IWF7r-i5NwKVdpCXk-oepn0jE9t4n4km7V7JDHJ_OrkA=w1103-h772-no)
