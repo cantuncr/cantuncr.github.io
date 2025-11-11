@@ -25,8 +25,8 @@ body::before {
 .podcast-float {
   position: fixed;
   right: 8px;
-  bottom: 2px;
-  z-index: 1000;
+  bottom: 0;
+  z-index: 1000001;
   background: transparent;
   padding: 0;
   border-radius: 12px;
@@ -67,7 +67,7 @@ body::before {
 @media (max-width: 768px) {
   .podcast-float {
     right: 6px;
-    bottom: 1px;
+    bottom: 0;
     padding: 0;
     width: calc(100vw - 12px);
     max-width: 350px;
@@ -92,7 +92,7 @@ body::before {
 @media (max-width: 576px) {
   .podcast-float {
     right: 4px;
-    bottom: 1px;
+    bottom: 0;
     padding: 0;
     width: calc(100vw - 8px);
     max-width: 320px;
@@ -117,7 +117,7 @@ body::before {
 @media (max-width: 480px) {
   .podcast-float {
     right: 3px;
-    bottom: 1px;
+    bottom: 0;
     padding: 0;
     width: calc(100vw - 6px);
     max-width: 300px;
@@ -228,6 +228,11 @@ h6 {
 
 #header .social-links a:hover {
   background: #18d26e;
+}
+
+/* Temporarily hide Resume button in header socials */
+#header .social-links a.resume {
+  display: none;
 }
 
 @media (max-width: 992px) {
@@ -892,6 +897,7 @@ section .container {
 /* AdParcel branding */
 .brand-adparcel {
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 .brand-adparcel .ad {
   color: #00bf63;
@@ -1431,52 +1437,7 @@ section .container {
 /*--------------------------------------------------------------
 # Floating SZR
 --------------------------------------------------------------*/
-.szr-float {
-  position: fixed !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  z-index: 999 !important;
-  width: 125px !important;
-  height: 125px !important;
-  overflow: hidden !important;
-  background: transparent !important;
-  backdrop-filter: none !important;
-  filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  -webkit-filter: none !important;
-}
 
-.szr-float:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-
-.szr-float img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-  filter: none !important;
-  -webkit-filter: none !important;
-}
-
-@media (max-width: 768px) {
-  .szr-float {
-    left: 8px;
-    bottom: 8px;
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 576px) {
-  .szr-float {
-    left: 4px;
-    bottom: 4px;
-    width: 50px;
-    height: 50px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Partners
