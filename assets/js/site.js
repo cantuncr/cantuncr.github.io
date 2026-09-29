@@ -65,15 +65,53 @@
     setTimeout(tick, 1800);
   }
 
-  // Seamless marquee: duplicate the logo row once
-  const track = document.querySelector('.marquee__track');
-  if (track && !reduceMotion) {
-    [...track.children].forEach((img) => {
-      const clone = img.cloneNode(true);
-      clone.alt = '';
-      clone.setAttribute('aria-hidden', 'true');
-      track.appendChild(clone);
+  // Seamless marquees: duplicate each row once
+  if (!reduceMotion) {
+    document.querySelectorAll('.marquee__track, .ticker__track').forEach((track) => {
+      [...track.children].forEach((el) => {
+        const clone = el.cloneNode(true);
+        if (clone.tagName === 'IMG') clone.alt = '';
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+      });
     });
+  }
+
+  // Venture filters
+  const filterBtns = document.querySelectorAll('.filters button');
+  const prods = document.querySelectorAll('.prods .prod');
+  filterBtns.forEach((btn) => btn.addEventListener('click', () => {
+    const f = btn.dataset.filter;
+    filterBtns.forEach((b) => {
+      b.classList.toggle('is-on', b === btn);
+      b.setAttribute('aria-pressed', String(b === btn));
+    });
+    prods.forEach((p) => {
+      p.hidden = f !== 'all' && !p.dataset.cat.split(' ').includes(f);
+      p.classList.add('is-in');
+    });
+  }));
+
+  // Count-up numbers
+  const counters = document.querySelectorAll('[data-count]');
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    const co = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const to = Number(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        const start = performance.now();
+        const step = (now) => {
+          const t = Math.min((now - start) / 1400, 1);
+          el.textContent = Math.round(to * (1 - Math.pow(1 - t, 3))) + suffix;
+          if (t < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        co.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach((el) => co.observe(el));
   }
 
   const year = document.getElementById('year');
