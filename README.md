@@ -1,3 +1,14 @@
-# [My Portfolio Website](https://cantuncr.github.io/)
+# [cantuncr.github.io](https://cantuncr.github.io/)
 
-![My-Website-Preview](https://lh3.googleusercontent.com/pw/AL9nZEV1uhTENKsN2gJ3PQLvrkXCB2zwLfHxvqRum5_YJ5aB5tb9u09CiqYRt1iuC-xOMzn006N4kDWq9GCaOFoVtGXBK5NOogT_7UR3xWntC14JT-IWF7r-i5NwKVdpCXk-oepn0jE9t4n4km7V7JDHJ_OrkA=w1103-h772-no)
+Personal site of **Can Tuncer** — QA engineer, founder of CTSS and lead instructor at CTSS Academy.
+
+Plain static HTML/CSS/JS, no build step — served directly by GitHub Pages.
+
+```
+index.html            single-page site
+assets/css/site.css   styles (brand tokens live in :root)
+assets/js/site.js     nav, scroll reveal, typing roles, logo marquee
+assets/img/           photos, partner logos, testimonial avatars, favicons
+```
+
+Run locally: `python3 -m http.server` and open http://localhost:8000.

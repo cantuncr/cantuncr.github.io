@@ -1,1140 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Can Tuncer — QA Engineer, Founder &amp; Educator</title>
+  <meta name="description" content="Can Tuncer is a QA engineer, founder of CTSS and lead instructor at CTSS Academy. Software testing, test automation, front-end development, training and product leadership from Ankara.">
+  <meta name="keywords" content="Can Tuncer, QA Engineer, Software Testing, Test Automation, Selenium, CTSS, CTSS Academy, Kill All Bugs, AdParcel, Scrum Master, Ankara">
+  <meta name="author" content="Can Tuncer">
+  <meta name="theme-color" content="#09090b">
+  <link rel="canonical" href="https://cantuncr.github.io/">
 
-  <title>Can TUNCER</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cantuncr.github.io/">
+  <meta property="og:title" content="Can Tuncer — QA Engineer, Founder & Educator">
+  <meta property="og:description" content="I help teams ship software people can trust — and train the next generation of testers.">
+  <meta property="og:image" content="https://cantuncr.github.io/assets/img/bg.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js')</script>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!--Snow Effect-->
-  <script src="assets/js/snow.js"></script>
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Can Tuncer",
+    "url": "https://cantuncr.github.io/",
+    "image": "https://cantuncr.github.io/assets/img/me.jpg",
+    "jobTitle": "QA Engineer & Founder",
+    "worksFor": { "@type": "Organization", "name": "CTSS" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Ankara", "addressCountry": "TR" },
+    "email": "mailto:cantuncr@gmail.com",
+    "sameAs": [
+      "https://github.com/cantuncr",
+      "https://www.linkedin.com/in/cantuncr/",
+      "https://medium.com/@cantuncr",
+      "https://www.youtube.com/@CTSSAcademy",
+      "https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
+  <!-- Header -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Can Tuncer — home">
+        <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand__name">can<span class="grad">tuncer</span></span>
+      </a>
+      <nav class="nav__links" id="navlinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#ventures">Ventures</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--sm btn--grad" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">Book a call</a>
+      </nav>
+      <button class="nav__toggle" aria-controls="navlinks" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-      <h1><a href="index.html"><img style="width: 60px; margin-right: 10px;" src="assets/img/logo.png" alt="" class=""> Can <b style="color: #1DB954;">TUNCER</b></a></h1>
-      
-      <h2>I'm a <span class="typing-text"></span>.</h2>
+  <main id="main">
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <p class="eyebrow mono"><span class="dot"></span> Available for projects &amp; training</p>
+        <h1 class="hero__title">
+          I build, test<br>&amp; ship software<br><span class="grad">people can trust.</span>
+        </h1>
+        <p class="hero__role mono">
+          <span class="muted">$ whoami →</span>
+          <span class="typing" data-words='["QA Engineer","Founder @ CTSS","Lead Instructor @ CTSS Academy","Author of Kill All Bugs","Scrum Master @ AdParcel","Podcaster","Startup Builder","Lifelong Learner"]'>QA Engineer</span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <p class="hero__lead">
+          QA engineer, founder and educator from Ankara. I help teams ship reliable products —
+          and I train the next generation of testers to do the same.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--grad" href="#contact">Work with me</a>
+          <a class="btn btn--ghost" href="https://drive.google.com/file/d/1RAXu-WdPyhhA6Zzs0o7XudlXvXZVAb4W/view?usp=sharing" target="_blank" rel="noopener">Download résumé ↗</a>
+        </div>
+        <ul class="socials" aria-label="Social profiles">
+          <li><a href="https://github.com/cantuncr" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/cantuncr/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a></li>
+          <li><a href="https://www.youtube.com/@CTSSAcademy" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></a></li>
+          <li><a href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU" target="_blank" rel="noopener" aria-label="Podcast on Spotify"><svg viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm5.5 17.3a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.6 11.66 1.34.36.22.47.68.25 1.03Zm1.47-3.26a.94.94 0 0 1-1.29.31c-3.23-1.99-8.15-2.56-11.97-1.4a.94.94 0 1 1-.54-1.8c4.36-1.32 9.78-.68 13.49 1.6.44.27.58.85.31 1.29Zm.13-3.4C15.23 8.34 8.85 8.13 5.16 9.25a1.13 1.13 0 1 1-.65-2.16c4.23-1.28 11.28-1.03 15.73 1.61a1.13 1.13 0 0 1-1.15 1.94Z"/></svg></a></li>
+          <li><a href="https://medium.com/@cantuncr" target="_blank" rel="noopener" aria-label="Medium"><svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 1 1-13.6 0 6.8 6.8 0 0 1 13.6 0Zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.52-6.42 3.38-6.42 3.38 2.88 3.38 6.42ZM24 12c0 3.17-.53 5.75-1.19 5.75s-1.19-2.58-1.19-5.75.53-5.75 1.19-5.75S24 8.83 24 12Z"/></svg></a></li>
+          <li><a href="https://linktr.ee/cantuncr" target="_blank" rel="noopener" aria-label="All links (Linktree)"><svg viewBox="0 0 24 24"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l3.5-3.5a3 3 0 1 1 4.2 4.2l-2 2a1 1 0 0 1-1.4-1.4l2-2a1 1 0 0 0-1.4-1.4L12 13.4a1 1 0 0 1-1.4 0Zm2.8-2.8a1 1 0 0 1 0 1.4l-3.5 3.5a3 3 0 1 1-4.2-4.2l2-2a1 1 0 0 1 1.4 1.4l-2 2a1 1 0 0 0 1.4 1.4L12 10.6a1 1 0 0 1 1.4 0Z"/></svg></a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <a href="https://github.com/cantuncr" target="_blank" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU?si=38acdd3240ff4c13" target="_blank" class="spotify"><i class="bi bi-spotify"></i></a>
-        <a href="https://www.youtube.com/@CTSSAcademy" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
-        <a href="https://medium.com/@cantuncr" target="_blank" class="medium"><i class="bi bi-medium"></i></a>
-        <a href="https://www.linkedin.com/in/cantuncr/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="https://calendly.com/cantuncr/new-meeting" target="_blank" class="calendly"><i class="bi bi-calendar-event"></i></a>
-        <a href="https://linktr.ee/cantuncr" target="_blank" class="linktree"><i class="bi bi-link-45deg"></i></a>
-        <a href="https://testingin1day.com" target="_blank" class="ebook"><i class="bi bi-book"></i></a>
-        <a href="https://drive.google.com/file/d/1RAXu-WdPyhhA6Zzs0o7XudlXvXZVAb4W/view?usp=sharing" target="_blank" class="resume"><i class="bi bi-file-person"></i></a>
       </div>
+      <a class="hero__scroll mono" href="#about" aria-label="Scroll to About">scroll ↓</a>
+    </section>
 
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
+    <!-- Stats strip -->
+    <section class="strip" aria-label="Highlights">
+      <div class="wrap strip__inner">
+        <div><strong class="grad">2020</strong><span>Founded CTSS</span></div>
+        <div><strong class="grad">6-month</strong><span>QA bootcamp I designed &amp; teach</span></div>
+        <div><strong class="grad">1 book</strong><span>Kill All Bugs — QA in 1 day</span></div>
+        <div><strong class="grad">US · EU · TR</strong><span>Remote teams I've shipped with</span></div>
       </div>
+    </section>
 
-      <div class="row gx-4 gy-4">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.jpg" class="img-fluid" alt="">
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="about__photo reveal">
+          <img src="assets/img/me.jpg" alt="Portrait of Can Tuncer" width="375" height="487" loading="lazy">
+          <span class="about__tag mono">// ankara, tr</span>
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3 class="about-title">Q&A Engineer</h3>
-          <p class="about-description fst-italic">
-            Transforming code excellence into exceptional user experiences as a visionary Q&A engineer!
+        <div class="about__body reveal">
+          <p class="kicker mono">01 — About</p>
+          <h2>Quality is not a phase.<br><span class="grad">It's a mindset.</span></h2>
+          <p>
+            I'm a multidisciplinary professional working across software testing, front-end development
+            and leadership. Over the last few years I've tested products for global brands like Yum! Brands,
+            led remote delivery teams, built my own company — <strong>CTSS</strong> — and designed a
+            6-month software testing bootcamp that turns beginners into job-ready QA engineers.
           </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>27 Oct 1999</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>cantuncr.github.io</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="https://wa.me/+905397447498"  target="_blank" class="telegram"><i class="bi bi-whatsapp"></i>(+90) 539 744 74 98</a></span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ankara, TR</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Sc. in Computer Engineering (University Some Courses)</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:cantuncr@gmail.com">cantuncr@gmail.com</a></span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-              </ul>
-            </div>
+          <p>
+            I care about the full picture: clean processes, reliable releases, and people who love what they
+            build. Agile at heart, teacher by nature, founder by choice.
+          </p>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Ankara, Türkiye</dd></div>
+            <div><dt>Focus</dt><dd>QA · Automation · Product</dd></div>
+            <div><dt>Education</dt><dd>Computer Engineering</dd></div>
+            <div><dt>Freelance</dt><dd class="ok">Available</dd></div>
+          </dl>
+          <div class="chips">
+            <span>🎧 Music degustation</span><span>🎨 Visual design</span><span>🎥 Videography</span><span>🔭 Astronomy</span>
           </div>
         </div>
       </div>
+    </section>
 
-    </div><!-- End About Me -->
-
-    
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-
-          <div class="progress">
-            <span class="skill">SDLC / STLC <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+    <!-- Ventures -->
+    <section class="section section--alt" id="ventures">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">02 — Ventures</p>
+          <h2>Things I've built <span class="grad">&amp; run.</span></h2>
+        </header>
+        <div class="bento">
+          <article class="card card--xl reveal">
+            <span class="card__label mono">Company · since 2020</span>
+            <h3>CTSS</h3>
+            <p>My software company. I set the strategy, build the teams and lead delivery — from a turnkey platform for a tour agency (GizmoTourizm) to an R&amp;D digitalization project for lawyers with the Ankara Bar Association, and the digital relaunch of 4kWeeks.</p>
+            <a class="link" href="mailto:info@ct-ss.com">info@ct-ss.com →</a>
+          </article>
+          <article class="card reveal">
+            <span class="card__label mono">Education</span>
+            <h3>CTSS Academy</h3>
+            <p>A 6-month Software Testing Bootcamp — manual to automation, from zero to job-ready.</p>
+            <a class="link" href="https://ctssacademy.github.io" target="_blank" rel="noopener">Explore the bootcamp →</a>
+          </article>
+          <article class="card card--book reveal">
+            <span class="card__label mono">eBook</span>
+            <h3>Kill All Bugs</h3>
+            <p>Learn Software Testing in 1 Day. 🌱 One tree planted for every copy sold.</p>
+            <a class="link" href="https://testingin1day.com" target="_blank" rel="noopener">Get the book →</a>
+          </article>
+          <article class="card reveal">
+            <span class="card__label mono">Product</span>
+            <h3><span class="adparcel"><b>Ad</b>Parcel</span></h3>
+            <p>A pixel-space ad marketplace. I'm Scrum Master &amp; Product Owner — vision, roadmap and revenue model.</p>
+            <a class="link" href="https://adparcel.io" target="_blank" rel="noopener">adparcel.io →</a>
+          </article>
+          <article class="card reveal">
+            <span class="card__label mono">Podcast</span>
+            <h3>CTSS Academy Podcast</h3>
+            <p>Conversations on testing, tech careers and building things.</p>
+            <p class="links-inline">
+              <a class="link" href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU" target="_blank" rel="noopener">Spotify →</a>
+              <a class="link" href="https://podcasts.apple.com/tr/podcast/ctss-academy/id1795401436" target="_blank" rel="noopener">Apple Podcasts →</a>
+            </p>
+          </article>
+          <article class="card card--wide reveal">
+            <div>
+              <span class="card__label mono">🇪🇺 Free · EU-supported</span>
+              <h3>Code4Future</h3>
+              <p>A 100% free coding camp for teens aged 12–17: coding fundamentals, interactive workshops and real projects built with mentors.</p>
             </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">APPLICATION AND SOFTWARE TESTING / BUG TRACKING <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">TEST AUTOMATION <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">API TESTING <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          
-          <div class="progress">
-            <span class="skill">JAVA <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">SELENIUM <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">TESTNG <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">MAVEN <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CUCUMBER <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">SQL <i class="val">50%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JIRA <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">GIT <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
+            <a class="btn btn--ghost" href="mailto:info@ct-ss.com?subject=Code4Future">Sign up via info@ct-ss.com</a>
+          </article>
         </div>
-
-
       </div>
+    </section>
 
-    </div><!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-music-line" style="color: #1DB954;"></i>
-            <h3>Music Degustation</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #b031cc;"></i>
-            <h3>Visual Designing</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-video-line" style="color: #eaff2d;"></i>
-            <h3>Videography</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-moon-line" style="color: #3dbce0;"></i>
-            <h3>Astronomy</h3>
-          </div>
-        </div>
-        
-      </div>
-
-    </div><!-- End Interests -->
-
-     <!-- ======= Testimonials ======= -->
-     <div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Testimonials</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                A person who is successful in his job, can paint your imagination, and enjoys his work very much.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="https://lh3.googleusercontent.com/pw/AP1GczOhLd9H3PKmZtzt24nuVJ_lnOdC-9vK_S0HYonUvivu8_1AWlhippXe8QmsuafgktMwLSY2C_SAUNbUgpgGbHw9hI68hW0WRj8zDf-XnRHOVHTM6ZRgZ9mjO0C0o7LrunHR8hYf23LD2kh9O37jMif57w=w531-h664-s-no-gm?authuser=0" class="testimonial-img" alt="">
-              <h3>Aylin KARSLI</h3>
-              <h4>Lawyer</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                He is a person I mentored at the beginning of his adventure and enjoyed it immensely. He loves his job and you can tell it from his eyes.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="https://lh3.googleusercontent.com/pw/AL9nZEWOMpMYccxzBRlgOq4u3kuq40sufxZzwwivS66VE_AdAMjRZIOZRKXSAb-E8nu-2LrsbtvsvY67cvAePvTItfbiaU-rlg7wjhV0t_qLAqrdq_maiGmlRhitaUXHzt4rxMTu5DRk2V0uF_916h8D2DgS-g=s500-no" class="testimonial-img" alt="">
-              <h3>Nilay TÜRKTEKİN</h3>
-              <h4>Computer Engineer</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Besides being a stand-alone team, he is a very good team player. He's a total playmaker. I very much enjoy working with him.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="https://lh3.googleusercontent.com/pw/AL9nZEXinfggL8tIaSdSkBzQ8FrXbSUCAdTigb4Uw6pycWpOwZWGqirBCtw0zrf-9_tEwa9MuRzEi4moaUX4pF0WtSsa0IAq7-IHSpZitFfkX1RYW_D7dBEdAmVIdtwvyQda7unhamYSroh04FxzMWRVUghZAQ=s676-no" class="testimonial-img" alt="">
-              <h3>Hasan Said SERTKAYA</h3>
-              <h4>Computer Engineer</h4>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                In addition to being successful in his field, he is a multidisciplinary character. This reflects in their work.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="https://lh3.googleusercontent.com/pw/AL9nZEVjAz81oJzGEyK0hwbmrJ21OcAMQPNhNHmOGKBfGuQSZ79jNOIpotGWgec_0YzH1WqGPz-pLuMP9TlpVvjPCnRmeCjDSuTgBLmygRouuNO3InRODCsu80pL-EByRWuFxSeKWAfEYIYbKqX-ijeRZuYkjg=s200-no" class="testimonial-img" alt="">
-              <h3>Gökhan KUŞ</h3>
-              <h4>Computer Engineer</h4>
-            </div>
-          </div><!-- End testimonial item -->
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div><!-- End Testimonials  -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Summary</h3>
-          <div class="resume-item pb-0">
-            <h4>Can TUNCER</h4>
-            <p><em>A multidisciplinary professional with over three years of experience, specializing in software
-              testing, front-end development, and leadership. Adept at utilizing both technical and soft skills
-              to drive innovation, deliver high-quality results, and lead teams towards achieving business
-              objectives. With a proven track record in Agile methodologies, project management, and
-              training, I bring a comprehensive approach to problem-solving and continuous learning.
-              Focused on fostering collaboration, delivering efficient solutions, and contributing to the
-              growth of innovative tech products.
-            </em></p>
-            <p>
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">03 — Services</p>
+          <h2>How I can <span class="grad">help you.</span></h2>
+          <p class="section__sub">Three ways to work together. Not sure which fits? <a class="link" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">Book a free intro call.</a></p>
+        </header>
+        <div class="services">
+          <article class="svc reveal">
+            <div class="svc__icon mono">01</div>
+            <h3>Quality &amp; Strategy</h3>
+            <p>Release with confidence and fewer production surprises.</p>
             <ul>
-              <li>Ankara, TR</li>
-              <li><a href="tel:+095397447498">(+90) 539 744 74 98</a></li>
-              <li><a href="mailto:cantuncr@gmail.com">cantuncr@gmail.com</a></li>
+              <li><strong>QA consulting &amp; strategy</strong> — assess QA maturity, define test approaches, build a roadmap.</li>
+              <li><strong>Test automation</strong> — Selenium, Cucumber/BDD, API testing and CI pipelines.</li>
+              <li><strong>Technical architecture &amp; documentation</strong> — solid foundations everyone can build on.</li>
             </ul>
-            </p>
-          </div>
-
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Bachelor of Tourism, Recreation and Leisure Management</h4>
-            <p><em>Ankara, TR</em></p>
-            <p>ANKARA HACI BAYRAM VELI UNIVERSITY</p>
-          </div>
-          <div class="resume-item">
-            <h4>Q&A TESTING BOOTCAMP</h4>
-            <p><em>NY, USA</em></p>
-            <p>NeoTech Academy</p>
-          </div>
-          <div class="resume-item">
-            <h4>Bachelor of Engineering, Computer Engineering</h4>
-            <p><em>Kirikkale, TR</em></p>
-            <p>KIRIKKALE UNIVERSITY</p>
-          </div>
-          
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Founder & Project Lead</h4>
-            <h5>2020 - Current</h5>
-            <p><em>CTSS, Ankara (TR)</em></p>
-            <p><em>
-             <li> The strategic direction of the company was defined, and business plans were developed and
-              implemented to guide the growth and operations of CTSS.</li>
-              <li> Team structures and collaboration models in software development, sales, marketing, and
-                customer relations were designed, with planning aligned to achieve business goals.</li>
-              <li> Software projects were actively managed, with project requirements defined based on client
-                needs, and teams were led to ensure timely and successful deliveries.</li>
-              <li> Training sessions on software development and implementation processes were conducted
-                for both internal team members and external professionals, supporting continuous learning
-                and development.</li>
-              <li> New business opportunities were identified, and business strategies were developed to
-                support the company’s growth, while relationships with potential clients were established to
-                diversify revenue streams.</li>
-              <li> Financial structures were monitored, budget planning was conducted, and investor relations
-                were managed to maintain the company’s financial stability.</li>
-              <li> Delivered a turnkey project to a tour agency, gaining experience in front-end development
-                processes and project leadership. (GizmoTourizm)</li>
-              <li> I provided digitalization services for lawyers through the R&D project I conducted with
-                Ankara Bar Association.</li>
-              <li> Recently gained experience in digitizing and marketing analog entries. (4kWeeks)</li>
-            </em></p>
-            <p>
-              <ul class="list-inline dev-icons">
-                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                <li class="list-inline-item"><i class="fa-brands fa-bootstrap"></i></li>
-                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                
-                <li class="list-inline-item"><i class="fa-brands fa-vuejs"></i></li>
-                <li class="list-inline-item"><i class="fab fa-react"></i></li>
+          </article>
+          <article class="svc reveal">
+            <div class="svc__icon mono">02</div>
+            <h3>Build</h3>
+            <p>From idea to shipped product, fast and lean.</p>
+            <ul>
+              <li><strong>MVP development for founders</strong> — plus mentorship on company setup &amp; go-to-market.</li>
+              <li><strong>Custom web apps</strong> and <strong>front-end takeover</strong> for stuck or ongoing projects.</li>
+              <li><strong>AI chatbot automation</strong> for sales, support and lead generation.</li>
+              <li><strong>Crypto token development</strong> — smart contracts on Ethereum, BNB Chain and more.</li>
+              <li><strong>Maintenance &amp; support</strong> — updates, bug fixes and performance.</li>
             </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Lead Instructor </h4>
-            <h5>2024 - Current</h5>
-            <p><em>CTSS Academy, Ankara (TR)</em></p>
-            <p>
-              <li>Course Development and Delivery: Designed and delivered a comprehensive 6-month
-                software testing engineering course, covering manual and automated testing methodologies,
-                tools, and best practices.</li>
-              <li>Curriculum Design: Created and structured the curriculum to include key software testing
-                concepts, including test case design, test execution, bug reporting, and test automation
-                frameworks.</li>
-              <li>Hands-on Training: Led practical training sessions on using industry-standard tools like
-                Selenium, JUnit, and Postman for automated testing, providing students with real-world
-                testing skills.</li>
-              <li>Student Mentorship: Provided mentorship and guidance to students throughout the course,
-                offering individual support and feedback to enhance learning outcomes and career
-                development.</li>
-              <li>Assessments and Evaluation: Developed and administered assessments to evaluate students’
-                understanding of testing concepts and their ability to apply them in real-world scenarios.</li>
-              <li>Collaboration and Teamwork: Fostered a collaborative learning environment where students
-                were encouraged to work in teams, simulate real-world testing projects, and share knowledge.</li>
-              <li>Industry Insights: Shared insights on industry trends, testing best practices, and career
-                opportunities in software testing, preparing students for the job market.</li>
-              <li>Continuous Improvement: Collected feedback from students to refine course content and
-                delivery methods, ensuring the course stayed relevant to industry needs and student
-                expectations.</li>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Scrum Master & Product Owner (@<span class="brand-adparcel"><span class="ad">Ad</span><span class="parcel">Parcel</span></span>) </h4>
-            <h5>2024 - Current</h5>
-            <p><em>CTSS, Ankara (TR)</em></p>
-            <p>
-              <li>Developed the product vision and aligned it with customer needs; clarified project
-                requirements and prioritized tasks.</li>
-              <li>Implemented the Scrum framework, leading sprint planning, daily stand-ups, and
-                retrospectives to ensure team alignment and focus on goals.</li>
-              <li>Removed potential obstacles quickly, ensuring a smooth and uninterrupted development
-                process.</li>
-              <li>Created a model where users can purchase pixel spaces, adding a high-value revenue stream
-                to the project and optimizing the revenue strategy.</li>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Project Manager </h4>
-            <h5>DEC 2024 - FEB 2025</h5>
-            <p><em>TNC Group, Remote/Belgrade(Serbia)</em></p>
-            <p>
-              <li>Successfully managed a 3-month project lifecycle, overseeing planning, execution, and delivery phases while ensuring alignment with organizational goals and timelines.</li>
-              <li>Defined project scope, objectives, and deliverables in collaboration with stakeholders, ensuring clear communication and agreement on expectations.</li>
-              <li>Facilitated daily stand-up meetings, sprint planning sessions, and retrospectives, leveraging Agile methodologies to optimize team performance and collaboration.</li>
-              <li>Monitored project progress through key performance indicators (KPIs) and milestones, implementing corrective actions to address risks and delays.</li>
-              <li>Coordinated cross-functional teams, including designers, developers, and testers, ensuring efficient resource allocation and task prioritization.</li>
-              <li>Prepared detailed project documentation, including timelines, status reports, and risk assessments, to maintain transparency with stakeholders.</li>
-              <li>Implemented tools like Jira and Trello for task tracking and reporting, improving visibility into project progress and enhancing decision-making..</li>
-              <li>Delivered the project on time and within budget, achieving a high level of stakeholder satisfaction and contributing to long-term organizational objectives.</li>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Q&A Engineer </h4>
-            <h5>JUN 2024 - NOV 2024</h5>
-            <p><em>Yum! Brands, Remote/Kentucky(US) </em></p>
-            <p>
-              <li>Designed and executed comprehensive test plans and test cases for web and mobile applications, focusing on both functional and non-functional
-                requirements.</li>
-              <li>Performed manual and automated testing using tools like Selenium, Cypress, and Postman, ensuring high-quality deliverables across development cycles.</li>
-              <li>Collaborated with cross-functional teams, including developers, product managers, and designers, to identify, document, and resolve software defects.</li>
-              <li>Developed Behavior-Driven Development (BDD) test scripts using Cucumber and Gherkin for effective communication and testing clarity.</li>
-              <li>Conducted API testing and validation through Postman, ensuring accurate request-response flows and API integrity.</li>
-              <li>Implemented and maintained continuous integration pipelines using Jenkins and GitLab CI/CD for automated test execution and reporting.</li>
-              <li>Led and participated in Agile ceremonies such as daily stand-ups, sprint planning, and retrospectives to enhance team collaboration and delivery efficiency.</li>
-              <li>Generated detailed test reports and dashboards for stakeholders, providing actionable insights to enhance software performance and reliability.</li>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Customer Success Strategist </h4>
-            <h5>MAR 2023 - JUN 2024</h5>
-            <p><em>Arabica Coffee House, Ankara (TR)</em></p>
-            <p>
-              <li>Operational processes were coordinated to ensure seamless and high-quality daily service
-                operations.</li>
-              <li>Utilizing my developed negotiation skills, I achieved a 100% satisfaction rate from the third
-                month onwards.</li>
-              <li>Improved business efficiency through inventory management and order tracking.</li>
-              <li>Collaborated harmoniously with colleagues to manage daily operations and organized
-                various events to boost motivation.</li>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Front-end Developer (Project Based Service Agreement)</h4>
-            <h5>YapiSepeti, Remote/Istanbul(TR)</h5>
-            <p><em>FEB 2023 - JUN 2023</em></p>
-            <p>
-             <li>Developed responsive interfaces for admin and order panels using HTML, CSS, and JavaScript, incorporating modern CSS techniques and utilizing JavaScript frameworks like React for interactive components. Implemented state management for efficient data handling.</li>
-             <li>Ensured cross-browser compatibility through rigorous testing and debugging of front-end components using Jest and Mocha test frameworks. Automated end-to-end testing with tools such as Selenium or Cypress. Optimized performance using Chrome DevTools and Lighthouse.</li>
-             <li>Collaborated closely with UI/UX designers and backend developers to integrate front-end interfaces with backend systems and APIs. Implemented RESTful APIs and WebSocket connections for real-time data synchronization using technologies like Node.js, Express.js, and MongoDB.</li>
-             <li>Developed dynamic front-end interfaces using Tailwind CSS for rapid UI development. Integrated with Node.js for backend API integrations, focusing on optimizing client-server communication, scalability, and performance.</li>
-             <li>Implemented sprint management methodology to effectively organize project processes and successfully meet tight deadlines in a project environment with limited time constraints.
-            </li>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Science Teacher</h4>
-            <h5>Okul Destek Society, Remote/Istanbul(TR)</h5>
-            <p><em>OCT 2020 - JUN 2021</em></p>
-            <p>
-              <li>Volunteered as a science teacher for elementary and middle school children, focusing on teaching them to discover and learn rather than memorize information.</li>
-              <li>Organized experiential learning and laboratory activities to enhance students' interest in science and technology, encouraging them to learn through exploration and hands-on experiences.</li>
-              <li>Customized lesson plans and teaching materials based on students' individual learning needs, aiming to maximize each student's potential.</li>
-              <li>Fostered a positive learning environment and built trust among students, supporting their academic achievements.
-              </li>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Intern Computer Engineer</h4>
-            <h5>Arvento Mobile Systems, Ankara(TR)</h5>
-            <p><em>JUN 2019 - SEPT 2019</em></p>
-            <p>
-              <li>During my early university years, I completed a computer engineering internship where I gained exposure to various software development roles including front-end, back-end, database management, and mobile application development, thus orienting my career path in computer engineering.</li>
-              <li>Collaborated with industrial engineers in the R&D of the "Arvento Kids" child tracking device, participating in the entire product lifecycle from prototyping to firmware development, utilizing technologies like C# for backend programming and real-time GPS data integration.</li>
-              <li>Contributed to the development process of a program related to boat racing called "Arvento Race," where I engaged in technical aspects such as algorithm design and real-time data processing for performance analysis.</li>
-            </p>
-          </div>
-          
-        </div>
-
-
-        <div class="col-lg-6">
-          <h3 class="resume-title">Skills</h3>
-          <div class="resume-item">
-            <h4>Q&A Testing Skills</h4>
-          
-            <p><em>DLC , STLC, Agile/Waterfall Methodology, Scrum/Agile Framework, BlackBox/WhiteBox/Static/Dynamic/Functional/Non-Functional/ Smoke/Regression/Ad-hoc/Positive/Negative Testing, CI/CD Schedules, GIT, JIRA, Selenium, TestNG, Maven, Cucumber, SQL, Postman
-            </em></p>
-            
-            <p>
-              <ul class="list-inline dev-icons">
-                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                <li class="list-inline-item"><i class="fa-brands fa-bootstrap"></i></li>
-                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                
-                <li class="list-inline-item"><i class="fa-brands fa-vuejs"></i></li>
-                <li class="list-inline-item"><i class="fab fa-react"></i></li>
+          </article>
+          <article class="svc reveal">
+            <div class="svc__icon mono">03</div>
+            <h3>Learn</h3>
+            <p>Start — or level up — a career in software testing.</p>
+            <ul>
+              <li><strong><a class="link" href="https://ctssacademy.github.io" target="_blank" rel="noopener">Software Testing Bootcamp</a></strong> — beginner to job-ready QA, no experience needed. <a class="link" href="https://drive.google.com/file/d/1MRjfoO7RPuLKtckB62wRmrQarxtQDZiR/view?usp=sharing" target="_blank" rel="noopener">Syllabus ↗</a></li>
+              <li><strong><a class="link" href="https://testingin1day.com" target="_blank" rel="noopener">Kill All Bugs eBook</a></strong> — QA fundamentals in a single day.</li>
+              <li><strong>ISTQB Foundation course</strong> on Udemy <span class="badge">Coming soon</span></li>
+              <li><strong>Corporate training</strong> for development &amp; QA teams.</li>
             </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Front-End Skills</h4>
-          
-            <p><em>HTML5, CSS3, Tailwind CSS, JavaScript, React.js, Redux ChromeDevTools, Git/GitHub, Webpack, npm, Code Splitting, Lazy Loading, Minification, Image Optimization, RESTful APIs, GraphQL, Custom Elements, Shadow DOM
-            </em></p>
-          </div>
-          <div class="resume-item">
-            <h4>Soft Skills</h4>
-          
-            <p><em>Superior Judgment, Quick Perception, Strong Leadership, Adaptability, Effective Communication, Problem Solving, Team Collaboration, Project Management, Time Management, Critical Thinking
-
-            </em></p>
-          </div>
-          
-          </div>
-          
+          </article>
         </div>
-
-          
-        
-
-          <div class="col-lg-6">
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item">
-              <h4>Personal and Professional Development Certificate</h4>
-              <p>Aspire Institute - Harvard University - 2024</p>
-            
-            
-            </div>
-            <div class="resume-item">
-              <h4>Introduction to Python</h4>
-              <p>Global AI Hub - 2021</p>
-              
-              <p>
-                <ul class="list-inline dev-icons">
-                  <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                  <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                  <li class="list-inline-item"><i class="fa-brands fa-bootstrap"></i></li>
-                  <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                  <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                  
-                  <li class="list-inline-item"><i class="fa-brands fa-vuejs"></i></li>
-                  <li class="list-inline-item"><i class="fab fa-react"></i></li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Volunteer Training Participation Certificate</h4>
-              <p>ODD - BUMED Academy - 2021</p>
-            
-            
-            </div>
-            <div class="resume-item">
-              <h4>13th ILTEK DAYS</h4>
-              <p>IEEE Yildiz Technical University Student Branch - 2018</p>
-             
-            </div>
-            
-          </div>
-
-          <div class="col-lg-6">
-            <h3 class="resume-title">Awards / Recognitions / Volunteer Work</h3>
-            <div class="resume-item">
-              <h4>Twitch Broadcaster (Zero to Hero Front-End Dev. SpeedRun)</h4>
-              <p>Collaborated by freeCodeCamp - 2023</p>
-              
-              <p>
-                <ul class="list-inline dev-icons">
-                  <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                  <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                  <li class="list-inline-item"><i class="fa-brands fa-bootstrap"></i></li>
-                  <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                  <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                  
-                  <li class="list-inline-item"><i class="fa-brands fa-vuejs"></i></li>
-                  <li class="list-inline-item"><i class="fab fa-react"></i></li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Volunteer Book Voiceover for Visually Impaired Individuals</h4>
-              <p>GETEM - 2022</p>
-            
-            
-            </div>
-            <div class="resume-item">
-              <h4>Volunteer Secondary School Teacher</h4>
-              <p>School Support Association (BUMED Academy) - 2020-2021</p>
-             
-            </div>
-            <div class="resume-item">
-              <h4>Member of Kirikkale University Cyber Security Club </h4>
-              <p>University of Kirikkale - 2017-2018</p>
-             
-            </div>
-            
-          </div>
-
-        </div>
-
-
-
       </div>
+    </section>
 
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">04 — Experience</p>
+          <h2>Where I've <span class="grad">made an impact.</span></h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="tl__date mono">2020 — now</span>
+            <div>
+              <h3>Founder &amp; Project Lead <span class="at">CTSS · Ankara</span></h3>
+              <p>Defined company strategy, built teams across engineering, sales and marketing, and led client software projects end-to-end. Ran internal and external trainings, managed budgets and investor relations.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl__date mono">2024 — now</span>
+            <div>
+              <h3>Lead Instructor <span class="at">CTSS Academy · Ankara</span></h3>
+              <p>Designed and teach a 6-month software testing course — test design, bug reporting, Selenium, JUnit and Postman — with hands-on team projects, mentorship and assessments.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl__date mono">2024 — now</span>
+            <div>
+              <h3>Scrum Master &amp; Product Owner <span class="at">AdParcel</span></h3>
+              <p>Own the product vision and backlog, run the Scrum cadence and designed the pixel-space purchase model that became a key revenue stream.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl__date mono">Dec 2024 — Feb 2025</span>
+            <div>
+              <h3>Project Manager <span class="at">TNC Group · Remote / Belgrade</span></h3>
+              <p>Ran a 3-month project from scope to delivery with a cross-functional team — shipped on time and within budget.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl__date mono">Jun — Nov 2024</span>
+            <div>
+              <h3>QA Engineer <span class="at">Yum! Brands · Remote / Kentucky</span></h3>
+              <p>Test plans for web &amp; mobile, Selenium/Cypress automation, BDD with Cucumber &amp; Gherkin, API testing in Postman, and CI with Jenkins and GitLab.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl__date mono">Mar 2023 — Jun 2024</span>
+            <div>
+              <h3>Customer Success Strategist <span class="at">Arabica Coffee House · Ankara</span></h3>
+              <p>Coordinated daily operations and reached 100% customer satisfaction from the third month onward.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl__date mono">Feb — Jun 2023</span>
+            <div>
+              <h3>Front-end Developer <span class="at">YapiSepeti · Remote / Istanbul</span></h3>
+              <p>Built responsive admin and order panels with React and Tailwind, tested with Jest, Mocha and Cypress, and integrated Node.js APIs.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl__date mono">Oct 2020 — Jun 2021</span>
+            <div>
+              <h3>Volunteer Science Teacher <span class="at">Okul Destek Society</span></h3>
+              <p>Taught elementary and middle-school kids to discover rather than memorize, through hands-on lab activities.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="tl__date mono">Jun — Sep 2019</span>
+            <div>
+              <h3>Intern Computer Engineer <span class="at">Arvento Mobile Systems · Ankara</span></h3>
+              <p>R&amp;D on the "Arvento Kids" tracking device and the "Arvento Race" boat-racing platform.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="twocol">
+          <div class="reveal">
+            <h3 class="minihead mono">Education</h3>
+            <ul class="plain">
+              <li><strong>B.Eng. Computer Engineering</strong><span>Kırıkkale University</span></li>
+              <li><strong>QA Testing Bootcamp</strong><span>NeoTech Academy · NY, USA</span></li>
+              <li><strong>B.Sc. Tourism, Recreation &amp; Leisure Management</strong><span>Ankara Hacı Bayram Veli University</span></li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <h3 class="minihead mono">Certificates &amp; recognition</h3>
+            <ul class="plain">
+              <li><strong>Personal &amp; Professional Development</strong><span>Aspire Institute · Harvard University · 2024</span></li>
+              <li><strong>Twitch: Zero to Hero Front-End SpeedRun</strong><span>with freeCodeCamp · 2023</span></li>
+              <li><strong>Volunteer audiobook narration for the visually impaired</strong><span>GETEM · 2022</span></li>
+              <li><strong>Introduction to Python</strong><span>Global AI Hub · 2021</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">05 — Toolbox</p>
+          <h2>What I <span class="grad">work with.</span></h2>
+        </header>
+        <div class="skills">
+          <div class="reveal">
+            <h3 class="minihead mono">Testing &amp; QA</h3>
+            <div class="chips chips--code">
+              <span>Selenium</span><span>Java</span><span>TestNG</span><span>Cucumber / BDD</span><span>Cypress</span><span>Postman</span><span>API testing</span><span>Maven</span><span>SQL</span><span>Jenkins</span><span>GitLab CI</span><span>SDLC / STLC</span><span>Regression · Smoke · E2E</span>
+            </div>
+          </div>
+          <div class="reveal">
+            <h3 class="minihead mono">Front-end</h3>
+            <div class="chips chips--code">
+              <span>JavaScript</span><span>React</span><span>Redux</span><span>Tailwind CSS</span><span>HTML5 / CSS3</span><span>REST</span><span>GraphQL</span><span>Webpack</span><span>Jest</span><span>Lighthouse</span><span>Git / GitHub</span>
+            </div>
+          </div>
+          <div class="reveal">
+            <h3 class="minihead mono">Delivery &amp; leadership</h3>
+            <div class="chips chips--code">
+              <span>Scrum</span><span>Product ownership</span><span>Jira</span><span>Trello</span><span>Project management</span><span>Curriculum design</span><span>Mentoring</span><span>Public speaking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="section section--tight" aria-labelledby="partners-title">
+      <div class="wrap">
+        <p class="kicker mono center" id="partners-title">Partnered with industry leaders</p>
+      </div>
+      <div class="marquee" aria-hidden="false">
+        <div class="marquee__track">
+          <img src="assets/img/partners/american-expres.png" alt="American Express" loading="lazy">
+          <img src="assets/img/partners/booz-allen-hamilton.png" alt="Booz Allen Hamilton" loading="lazy">
+          <img src="assets/img/partners/oracle.png" alt="Oracle" loading="lazy">
+          <img src="assets/img/partners/jp-morgan-1.png" alt="J.P. Morgan" loading="lazy">
+          <img src="assets/img/partners/Bank_of_America_logo.svg.png" alt="Bank of America" loading="lazy">
+          <img src="assets/img/partners/Verizon_Communications-Logo.wine.png" alt="Verizon" loading="lazy">
+          <img src="assets/img/partners/Comcast-Logo.wine.png" alt="Comcast" loading="lazy">
+          <img src="assets/img/partners/liberty-mutual-1.svg" alt="Liberty Mutual" loading="lazy">
+          <img src="assets/img/partners/Fannie-Mae-Logo.jpg" alt="Fannie Mae" loading="lazy">
+          <img src="assets/img/partners/American-Automobile-Association-Logo.svg.png" alt="AAA" loading="lazy">
+          <img src="assets/img/partners/universal-logo-png_seeklogo-354646.png" alt="Universal" loading="lazy">
+          <img src="assets/img/partners/MailChimp.svg.png" alt="Mailchimp" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--alt" id="testimonials">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker mono">06 — Kind words</p>
+          <h2>What people <span class="grad">say.</span></h2>
+        </header>
+        <div class="quotes">
+          <figure class="quote reveal">
+            <blockquote>“He is a person I mentored at the beginning of his adventure and enjoyed it immensely. He loves his job and you can tell it from his eyes.”</blockquote>
+            <figcaption><img src="assets/img/testimonials/nilay.jpg" alt="" loading="lazy"><span><strong>Nilay Türktekin</strong>Computer Engineer</span></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>“Besides being a stand-alone team, he is a very good team player. He's a total playmaker. I very much enjoy working with him.”</blockquote>
+            <figcaption><img src="assets/img/testimonials/hasan.jpg" alt="" loading="lazy"><span><strong>Hasan Said Sertkaya</strong>Computer Engineer</span></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>“In addition to being successful in his field, he is a multidisciplinary character. This reflects in his work.”</blockquote>
+            <figcaption><img src="assets/img/testimonials/gokhan.jpg" alt="" loading="lazy"><span><strong>Gökhan Kuş</strong>Computer Engineer</span></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>“A person who is successful in his job, can paint your imagination, and enjoys his work very much.”</blockquote>
+            <figcaption><img src="assets/img/testimonials/aylin.jpg" alt="" loading="lazy"><span><strong>Aylin Karslı</strong>Lawyer</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <div class="contact__hero reveal">
+          <p class="kicker mono">07 — Contact</p>
+          <h2>Got a product that<br><span class="grad">needs to just work?</span></h2>
+          <p class="section__sub">Projects, training, speaking or podcast collaborations — I usually reply within a day.</p>
+          <div class="hero__cta">
+            <a class="btn btn--grad" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">Book a meeting</a>
+            <a class="btn btn--ghost" href="mailto:cantuncr@gmail.com">cantuncr@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact__grid">
+          <a class="ccard reveal" href="mailto:cantuncer@ct-ss.com"><span class="mono">Business email</span><strong>cantuncer@ct-ss.com</strong></a>
+          <a class="ccard reveal" href="https://wa.me/905397447498" target="_blank" rel="noopener"><span class="mono">WhatsApp / phone</span><strong>+90 539 744 74 98</strong></a>
+          <a class="ccard reveal" href="mailto:ctssacademy@gmail.com"><span class="mono">Podcast ads &amp; collabs</span><strong>ctssacademy@gmail.com</strong></a>
+          <a class="ccard reveal" href="https://testingin1day.com" target="_blank" rel="noopener"><span class="mono">Buy my book</span><strong>Kill All Bugs ↗</strong></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <a class="brand" href="#top"><span class="brand__mark" aria-hidden="true">&lt;/&gt;</span><span class="brand__name">can<span class="grad">tuncer</span></span></a>
+      <p class="mono muted">© <span id="year">2026</span> Can Tuncer · Built with care in Ankara · <span class="grad">kill all bugs.</span></p>
     </div>
-  </section><!-- End Resume Section -->
+  </footer>
 
-   <!-- ======= Services Section ======= -->
-   <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row gx-4 gy-4">
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bxs-graduation'></i></div>
-            <h4><a href="https://drive.google.com/file/d/1MRjfoO7RPuLKtckB62wRmrQarxtQDZiR/view?usp=sharing" target="_blank" rel="noopener noreferrer">Software Testing Bootcamp</a></h4>
-            <p>From beginner to job-ready QA tester in one complete bootcamp. This bootcamp is designed for anyone curious about software testing and aiming to start a career in QA. You’ll begin with the fundamentals of manual testing and gradually progress to advanced automation techniques. Through hands-on projects, you’ll explore essential testing tools, frameworks, and real-world workflows. By the end, you’ll have the confidence and skills to manage full testing processes and improve software quality in professional environments—no prior experience required.</p>
-            <p>For detailed information and to register, click <a class="cta-here" href="https://ctssacademy.github.io" target="_blank" rel="noopener noreferrer">here</a>.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-code-alt'></i></div>
-            <h4>
-              <a href="">Code<span class="c4" style="color: #00bf63;">4</span>Future</a>
-              <small class="subtitle">(EU Union Collaborated Free Coding Camp)</small>
-            </h4>
-            <p>🇪🇺 100% free coding camp for teens to learn programming and build real projects. Are you 12–17 years old and eager to explore the world of programming? Code4Future is a fully free EU-supported initiative that introduces teens to coding, algorithms, and teamwork. Participants receive step-by-step training in coding fundamentals, join interactive workshops, and collaborate with mentors to transform their ideas into working projects. This project is completely free of charge, ensuring equal access for everyone.</p>
-            <p>📩 Contact / Sign up: <a href="mailto:info@ct-ss.com">info@ct-ss.com</a></p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-book-open'></i></div>
-            <h4>
-              <a href="">Kill All Bugs<br>Learn Software Testing in 1 Day - eBook</a>
-            </h4>
-            <p>Master the essentials of QA in just one day with Kill All Bugs.</p>
-            <p>This eBook is your shortcut into the world of software testing. Written with beginners in mind, Kill All Bugs: Learn Software Testing in 1 Day breaks down complex testing concepts into clear, practical lessons. From manual techniques to modern testing approaches, you’ll learn how to identify bugs, design test cases, and understand QA fundamentals—all in one structured guide. Perfect for self-learners and career switchers.</p>
-            <p>🌱 For every copy sold, we plant one tree — and once we reach 10,000 sales, we’ll plant 10,000 trees together!</p>
-            <p>🎁 Plus, the first 1,000 buyers get a chance to win a premium parcel in <a href="https://adparcel.io" target="_blank" rel="noopener noreferrer" class="brand-adparcel-link"><span class="brand-adparcel"><span class="ad">Ad</span><span class="parcel">Parcel</span></span></a>!</p>
-            <p>Start your testing journey today and empower your career:<br>
-            🛒 Buy now: <a href="https://testingin1day.com" target="_blank" rel="noopener noreferrer">https://testingin1day.com</a></p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bxs-network-chart'></i></div>
-            <h4><a href="">Custom Web Apps</a></h4>
-            <p>Tailored web applications built around your business needs. I design and develop custom front-end solutions that address your unique business challenges. By analyzing requirements in depth, I deliver functional, reliable, and scalable web apps that combine performance with usability. Each project is crafted to provide real value and support long-term growth.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-layout'></i></div>
-            <h4><a href="">Front-End Development Takeover</a></h4>
-            <p>Step into ongoing projects and deliver features without delays. Whether your project is stuck, needs refactoring, or requires new features, I can seamlessly take over front-end development. From fixing broken interfaces to implementing advanced functionality, I ensure projects stay on track and meet quality standards. My focus is fast integration and efficient delivery.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-support'></i></div>
-            <h4><a href="">Maintenance and Support</a></h4>
-            <p>Keep your apps up-to-date, secure, and user-friendly. Continuous support is key to keeping your applications relevant and reliable. I provide regular updates, bug fixes, and performance optimizations to enhance user engagement. With proactive monitoring and fast response times, your product remains stable and future-ready.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-bot'></i></div>
-            <h4><a href="">Customized AI ChatBot Automation for Every Business</a></h4>
-            <p>AI chatbots built and trained to fit your exact business needs. Every business is different, and so should be its automation. I design and deploy AI-powered chatbots tailored to your workflows—whether it’s sales, customer support, or lead generation. These bots reduce response times, increase customer satisfaction, and scale seamlessly with your business. With continuous training and integration, they evolve as your needs grow.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-badge-check'></i></div>
-            <h4><a href="">ISTQB Udemy Course</a></h4>
-            <p class="coming-soon" style="color: #00bf53; font-size: 0.9em; margin-bottom: 10px;">(Coming Soon)</p>
-            <p>Structured online training to prepare you for ISTQB certification. This Udemy course covers the full ISTQB Foundation Level syllabus, making it the perfect preparation for your certification exam. It includes structured lessons, practice questions, and real-world examples to help you master essential QA concepts. Designed to be self-paced, the course equips you with both theoretical knowledge and practical exam strategies.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-analyse'></i></div>
-            <h4><a href="">QA Consulting & Strategy</a></h4>
-            <p>Align your QA processes with business goals for measurable outcomes. I provide consulting services to assess your QA maturity and develop strategies that fit your organization’s goals. From defining test approaches to integrating automation pipelines, I ensure that quality assurance supports both technical and business objectives. The result: higher release confidence, fewer production issues, and a structured QA roadmap.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-coin'></i></div>
-            <h4><a href="">Crypto Token Development</a></h4>
-            <p>Launch your own secure and scalable crypto token. I provide end-to-end token creation services for businesses and individuals interested in entering the blockchain ecosystem. From smart contract development to deployment on Ethereum, BNB Chain, or other networks, I ensure security, scalability, and compliance with best practices. Whether for utility, governance, or fundraising purposes, your token will be ready for listing and real-world use.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-rocket'></i></div>
-            <h4><a href="">MVP Development for Entrepreneurs</a></h4>
-            <p>Turn your startup idea into a market-ready MVP fast—with mentorship and business setup support. Speed matters when testing ideas. I help entrepreneurs transform concepts into functional Minimum Viable Products (MVPs) in record time. With lean development practices, we focus only on the features that validate your idea in the market. Additionally, I provide mentorship, guidance on company setup, and advice on go-to-market strategies, ensuring your product is not only built but also positioned for success. This holistic approach accelerates feedback, reduces risks, and gets your MVP in front of real users quickly.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class='bx bx-sitemap'></i></div>
-            <h4><a href="">Technical Architecture & Documentation</a></h4>
-            <p>Solid technical foundations and clear documentation for your projects. Every successful project starts with a robust architecture. I design scalable and future-proof technical infrastructures tailored to your project’s needs. Alongside this, I deliver comprehensive technical documentation, ensuring smooth collaboration between developers, stakeholders, and future maintainers. Clear architecture and documentation reduce risks, cut costs, and guarantee sustainable growth for your product.</p>
-          </div>
-        </div>
-
-      </div>
-  </section><!-- End Services Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>Partnered with Industry Leaders</p>
-      </div>
-
-      
-
-      <div class="row partners-container">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/american-expres.png" alt="American Express" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/booz-allen-hamilton.png" alt="Booz Allen Hamilton" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/oracle.png" alt="Oracle" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/liberty-mutual-1.svg" alt="Liberty Mutual" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/Bank_of_America_logo.svg.png" alt="Bank of America" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/Verizon_Communications-Logo.wine.png" alt="Verizon" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/universal-logo-png_seeklogo-354646.png" alt="Universal" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/MailChimp.svg.png" alt="MailChimp" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/Fannie-Mae-Logo.jpg" alt="Fannie Mae" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/Comcast-Logo.wine.png" alt="Comcast" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/American-Automobile-Association-Logo.svg.png" alt="AAA" class="img-fluid partner-img">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-          <div class="partner-logo">
-            <img src="assets/img/partners/jp-morgan-1.png" alt="JP Morgan" class="img-fluid partner-img">
-          </div>
-        </div>
-      </div>
-        
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="./assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My GitHub Account</h4>
-              <p>Check my GitHub account!</p>
-              <div class="portfolio-links">
-                 <a href="assets/img/portfolio/portfolio-details-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My GitHub Account"><i class="bx bx-plus"></i></a> 
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="./assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My GitHub Account</h4>
-              <p>Check my GitHub account!</p>
-              <div class="portfolio-links">
-                 <a href="assets/img/portfolio/portfolio-details-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My GitHub Account"><i class="bx bx-plus"></i></a> 
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="./assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My GitHub Account</h4>
-              <p>Check my GitHub account!</p>
-              <div class="portfolio-links">
-                 <a href="assets/img/portfolio/portfolio-details-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My GitHub Account"><i class="bx bx-plus"></i></a> 
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="./assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My GitHub Account</h4>
-              <p>Check my GitHub account!</p>
-              <div class="portfolio-links">
-                 <a href="assets/img/portfolio/portfolio-details-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My GitHub Account"><i class="bx bx-plus"></i></a> 
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="./assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My GitHub Account</h4>
-              <p>Check my GitHub account!</p>
-              <div class="portfolio-links">
-                 <a href="assets/img/portfolio/portfolio-details-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My GitHub Account"><i class="bx bx-plus"></i></a> 
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="./assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My GitHub Account</h4>
-              <p>Check my GitHub account!</p>
-              <div class="portfolio-links">
-                 <a href="assets/img/portfolio/portfolio-details-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My GitHub Account"><i class="bx bx-plus"></i></a> 
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="./assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My GitHub Account</h4>
-              <p>Check my GitHub account!</p>
-              <div class="portfolio-links">
-                 <a href="assets/img/portfolio/portfolio-details-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My GitHub Account"><i class="bx bx-plus"></i></a> 
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="./assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>My GitHub Account</h4>
-              <p>Check my GitHub account!</p>
-              <div class="portfolio-links">
-                 <a href="assets/img/portfolio/portfolio-details-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My GitHub Account"><i class="bx bx-plus"></i></a> 
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
-        
-     
-
-      </div>
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p><a href="mailto:cantuncr@gmail.com">cantuncr@gmail.com</a></p>
-            <p><a href="mailto:cantuncer@ct-ss.com">cantuncer@ct-ss.com</a></p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p><a href="tel:+905397447498">(+90) 539 744 74 98</a></p>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-calendar-check"></i>
-            <h3>Schedule a Meeting</h3>
-            <p><a href="https://calendly.com/cantuncr/new-meeting" target="_blank">Book a meeting with me</a></p>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-book-open"></i>
-            <h3>Buy My Book</h3>
-            <p><a href="https://testingin1day.com" target="_blank">Kill All Bugs: Learn Software Testing in 1 Day</a></p>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-podcast"></i>
-            <h3>Follow My Podcast</h3>
-            <p><a href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU?si=38acdd3240ff4c13" target="_blank">Spotify</a> | <a href="https://podcasts.apple.com/tr/podcast/ctss-academy/id1795401436" target="_blank">Apple Podcasts</a></p>
-          </div>
-        </div>
-        
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Podcast Advertising & Collaboration</h3>
-            <p><a href="mailto:ctssacademy@gmail.com">ctssacademy@gmail.com</a></p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              
-              <a href="https://github.com/cantuncr" target="_blank" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU?si=38acdd3240ff4c13" target="_blank" class="spotify"><i class="bi bi-spotify"></i></a>
-              <a href="https://www.youtube.com/channel/UC1PHtqzLSwdzSCf8tRHioxQ" target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
-              <a href="https://medium.com/@cantuncr" target="_blank" class="medium"><i class="bi bi-medium"></i></a>
-              <a href="https://www.linkedin.com/in/cantuncr/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p><a href="https://goo.gl/maps/AXEozDLsV49ZWCp69" target="_blank">Ankara, TR</a></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form> -->
-
-    </div>
-  </section><!-- End Contact Section -->
-
-  
-
-  <!-- Floating Podcast (bottom-right) -->
-  <div class="podcast-float" id="podcast-float">
-    <button class="podcast-close" aria-label="Close podcast" onclick="document.getElementById('podcast-float').style.display='none'">×</button>
-    <iframe style="border-radius:8px" src="https://open.spotify.com/embed/show/0jLBnYYl9r2v9BQrmjVDeU?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  </div>
-
-  <!-- Floating SZR (bottom-left) -->
-  
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-
+  <script src="assets/js/site.js" defer></script>
 </body>
-
 </html>
