@@ -416,16 +416,40 @@ html:not(.motion) .tl__line div { transform: none; }
   .stats__grid > div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
 }
 
-/* Testimonials ----------------------------------------------------------- */
-.quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 56px; }
-.quote { margin: 0; padding: 36px; border-radius: var(--radius); border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01)); display: flex; flex-direction: column; gap: 28px; transition: border-color .3s; }
-.quote:hover { border-color: rgba(192,38,211,.4); }
-.quote blockquote { margin: 0; font: 500 clamp(1.1rem, 1.6vw, 1.35rem)/1.45 var(--font-display); letter-spacing: -0.01em; color: #e4e4e7; }
-.quote figcaption { display: flex; align-items: center; gap: 14px; margin-top: auto; }
-.quote img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; padding: 2px; border: 1px solid var(--line-strong); }
-.quote figcaption span { display: grid; font-size: 14px; color: var(--muted); }
-.quote figcaption strong { color: var(--text); font-size: 15px; }
-@media (max-width: 760px) { .quotes { grid-template-columns: 1fr; } .quote { padding: 26px; } }
+/* Testimonials: pinned quote stage ------------------------------------ */
+.voices { position: relative; border-top: 1px solid var(--line); }
+.voices-pin { position: relative; overflow: hidden; padding: clamp(96px, 12vw, 150px) 0; }
+.voices__mark {
+  position: absolute; right: -4vw; top: 50%; transform: translateY(-50%);
+  font: 700 clamp(24rem, 52vw, 50rem)/.7 Georgia, "Times New Roman", serif; pointer-events: none; user-select: none;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; opacity: .16;
+}
+.voices__head { margin-bottom: clamp(40px, 6vw, 72px); }
+.voices__stage { position: relative; display: grid; gap: 64px; }
+.voice { margin: 0; max-width: 1040px; }
+.voice blockquote {
+  margin: 0; font: 600 clamp(1.7rem, 4.2vw, 3.6rem)/1.12 var(--font-display); letter-spacing: -0.035em;
+}
+.voice blockquote::before { content: "\201C"; color: var(--orange); }
+.voice blockquote::after { content: "\201D"; color: var(--orange); }
+.voice figcaption { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; margin-top: 32px; }
+.voice figcaption::before { content: ""; width: 48px; height: 2px; background: var(--grad); }
+.voice__name { font: 700 clamp(1.1rem, 1.6vw, 1.35rem)/1.2 var(--font-display); }
+.voice__role { font-size: 11px; color: var(--dim); text-transform: uppercase; letter-spacing: .2em; }
+.voices__meta { display: none; }
+
+/* Stage mode: quotes share one spot and play one after another while pinned */
+html.motion .voices-pin { min-height: 100svh; display: flex; align-items: center; padding: calc(var(--nav-h) + 24px) 0 40px; }
+html.motion .voices__inner { width: 100%; }
+html.motion .voices__stage { display: block; }
+html.motion .voice { position: absolute; left: 0; top: 0; width: 100%; }
+html.motion .voice blockquote .qw { opacity: .12; }
+html.motion .voices__meta { display: flex; align-items: center; gap: 24px; margin-top: clamp(40px, 6vw, 64px); font-size: 12px; color: var(--dim); }
+.voices__count b { font: 700 1.6rem/1 var(--font-display); color: var(--text); letter-spacing: -0.03em; }
+.voices__bars { display: flex; gap: 6px; flex: 1; max-width: 420px; }
+.voices__bars i { flex: 1; height: 2px; background: rgba(255,255,255,.1); overflow: hidden; }
+.voices__bars b { display: block; height: 100%; background: var(--grad); transform: scaleX(0); transform-origin: left; }
+@media (max-width: 720px) { .voices__mark { right: -18vw; top: 38%; } }
 
 /* Contact ---------------------------------------------------------------- */
 .contact { position: relative; overflow: hidden; padding: clamp(110px, 14vw, 180px) 0; }

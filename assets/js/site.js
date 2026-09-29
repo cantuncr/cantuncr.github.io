@@ -148,6 +148,9 @@
 
   // Split headings before anything measures them
   $$('[data-split]').forEach((el) => splitWords(el, el.dataset.split || 'sw'));
+  $$('.voice blockquote').forEach((q) => {
+    q.innerHTML = q.textContent.trim().split(/\s+/).map((w) => `<span class="qw">${w}</span>`).join(' ');
+  });
   const read = $('[data-read]');
   if (read) {
     read.innerHTML = read.textContent.trim().split(/\s+/).map((w) => `<span class="rw">${w}</span>`).join(' ');
@@ -342,6 +345,42 @@
       ScrollTrigger.create({ trigger: item, start: 'top 70%', onEnter: () => item.classList.add('is-on'), onLeaveBack: () => item.classList.remove('is-on') });
       gsap.from(item, { x: 40, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: item, start: 'top 88%' } });
     });
+
+    // Testimonials: pinned stage — each quote enters, lights up word by word, then exits
+    const voices = $$('.voice');
+    if (voices.length) {
+      const stage = $('.voices__stage');
+      const count = $('.voices__count b');
+      const bars = $$('.voices__bars b');
+      const names = voices.map((v) => $('.voice__name', v));
+      const sizeStage = () => { stage.style.height = `${Math.max(...voices.map((v) => v.offsetHeight))}px`; };
+      sizeStage();
+      ScrollTrigger.addEventListener('refreshInit', sizeStage);
+      gsap.set(voices.slice(1), { opacity: 0 });
+      const STEP = 3;
+      let active = 0;
+      names.forEach((n) => { n.dataset.name = n.textContent; });
+      const vt = gsap.timeline({
+        // Driven by the scrubbed timeline itself, so the counter never lags the quote on screen
+        onUpdate() {
+          const idx = Math.min(voices.length - 1, Math.floor((this.time() + 0.3) / STEP));
+          if (idx === active) return;
+          active = idx;
+          count.textContent = String(idx + 1).padStart(2, '0');
+          scramble(names[idx], names[idx].dataset.name);
+        },
+        scrollTrigger: { trigger: '.voices-pin', pin: true, scrub: 1, start: 'top top', end: () => `+=${voices.length * 90}%`, invalidateOnRefresh: true },
+      });
+      vt.to('.voices__mark', { rotate: 28, scale: 1.12, ease: 'none', duration: voices.length * STEP }, 0);
+      voices.forEach((v, i) => {
+        const t = i * STEP;
+        const words = $$('.qw', v);
+        if (i > 0) vt.fromTo(v, { opacity: 0, y: 70 }, { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, t);
+        vt.to(words, { opacity: 1, stagger: 1.5 / words.length, duration: 0.3, ease: 'none' }, t + 0.2);
+        vt.fromTo(bars[i], { scaleX: 0 }, { scaleX: 1, duration: STEP - 0.4, ease: 'none' }, t);
+        if (i < voices.length - 1) vt.to(v, { opacity: 0, y: -70, duration: 0.6, ease: 'power3.in' }, t + STEP - 0.6);
+      });
+    }
 
     // Contact headline zooms in; footer wordmark rises
     gsap.fromTo('.cta-big', { scale: 0.72, opacity: 0.2 }, { scale: 1, opacity: 1, ease: 'none', scrollTrigger: { trigger: '.contact', start: 'top bottom', end: 'top 25%', scrub: true } });
