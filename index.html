@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Can Tuncer — Founder of CTSS LLC · QA Engineer · Educator</title>
-  <meta name="description" content="Can Tuncer is the founder of CTSS LLC — a US-registered software &amp; edtech studio behind 20+ products like AdParcel, AwuCat, hibep and Dent-IS — plus a QA engineer and lead instructor at CTSS Academy. Software testing, test automation, front-end development, training and product leadership from Ankara.">
-  <meta name="keywords" content="Can Tuncer, QA Engineer, Software Testing, Test Automation, Selenium, CTSS, CTSS Academy, Kill All Bugs, AdParcel, Scrum Master, Ankara">
+  <meta name="description" content="Can Tuncer is the founder of CTSS LLC — a US-registered software &amp; edtech studio behind 20+ products like AdParcel, AwuCat, hibep and Dent-IS — plus a QA engineer and lead instructor at CTSS Academy.">
+  <meta name="keywords" content="Can Tuncer, CTSS LLC, QA Engineer, Software Testing, Test Automation, CTSS Academy, Kill All Bugs, AdParcel, AwuCat, hibep, Dent-IS, Ankara">
   <meta name="author" content="Can Tuncer">
-  <meta name="theme-color" content="#09090b">
+  <meta name="theme-color" content="#050507">
   <link rel="canonical" href="https://cantuncr.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cantuncr.github.io/">
-  <meta property="og:title" content="Can Tuncer — QA Engineer, Founder & Educator">
-  <meta property="og:description" content="I help teams ship software people can trust — and train the next generation of testers.">
+  <meta property="og:title" content="Can Tuncer — 20+ products. One founder.">
+  <meta property="og:description" content="Founder of CTSS LLC. QA engineer at heart, educator by nature.">
   <meta property="og:image" content="https://cantuncr.github.io/assets/img/bg.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -23,9 +23,15 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
-  <script>document.documentElement.classList.add('js')</script>
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('motion');
+    })();
+  </script>
 
   <script type="application/ld+json">
   {
@@ -34,7 +40,7 @@
     "name": "Can Tuncer",
     "url": "https://cantuncr.github.io/",
     "image": "https://cantuncr.github.io/assets/img/me.jpg",
-    "jobTitle": "QA Engineer & Founder",
+    "jobTitle": "Founder & CEO",
     "worksFor": { "@type": "Organization", "name": "CTSS LLC", "url": "https://www.ct-ss.com" },
     "address": { "@type": "PostalAddress", "addressLocality": "Ankara", "addressCountry": "TR" },
     "email": "mailto:cantuncr@gmail.com",
@@ -52,444 +58,105 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="pl-meta mono"><span>Can Tuncer — Founder · QA · Educator</span><span>Ankara — Sheridan, WY</span></div>
+    <div class="pl-word">
+      <span class="pl-letter">c</span><span class="pl-letter">a</span><span class="pl-letter">n</span><span class="pl-letter grad">t</span><span class="pl-letter grad">u</span><span class="pl-letter grad">n</span><span class="pl-letter grad">c</span><span class="pl-letter grad">e</span><span class="pl-letter grad">r</span>
+    </div>
+    <div class="pl-meta pl-bottom">
+      <div class="pl-row mono"><span>Loading experience</span><span class="pl-count">000</span></div>
+      <div class="pl-track"><div class="pl-bar"></div></div>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"><div></div></div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="mono"></span></div></div>
+
   <!-- Header -->
   <header class="nav" id="top">
     <div class="wrap nav__inner">
-      <a class="brand" href="#top" aria-label="Can Tuncer — home">
+      <a class="brand" href="#top" aria-label="Can Tuncer — back to top">
         <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
         <span class="brand__name">can<span class="grad">tuncer</span></span>
       </a>
-      <nav class="nav__links" id="navlinks" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#ventures">Ventures</a>
-        <a href="#services">Services</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn--sm btn--grad" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">Book a call</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about"><i class="mono">01</i>About</a>
+        <a href="#ventures"><i class="mono">02</i>Ventures</a>
+        <a href="#services"><i class="mono">03</i>Services</a>
+        <a href="#experience"><i class="mono">04</i>Experience</a>
+        <a href="#contact"><i class="mono">05</i>Contact</a>
       </nav>
-      <button class="nav__toggle" aria-controls="navlinks" aria-expanded="false" aria-label="Open menu">
-        <span></span><span></span>
-      </button>
+      <div class="nav__right">
+        <a class="btn btn--sm btn--grad nav__cta" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener"><i class="live-dot"></i>Book a call</a>
+        <button class="nav__toggle" aria-controls="menu" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button>
+      </div>
     </div>
   </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#about"><i class="mono">01</i>About</a>
+      <a href="#ventures"><i class="mono">02</i>Ventures</a>
+      <a href="#services"><i class="mono">03</i>Services</a>
+      <a href="#experience"><i class="mono">04</i>Experience</a>
+      <a href="#contact"><i class="mono">05</i>Contact</a>
+    </nav>
+    <a class="btn btn--grad btn--block" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">Book a call →</a>
+  </div>
 
   <main id="main">
 
     <!-- Hero -->
-    <section class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="wrap hero__inner">
-        <p class="eyebrow mono"><span class="dot"></span> Available for projects &amp; training</p>
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"><div class="hero__glow"></div><div class="hero__grid"></div></div>
+      <div class="hero__universe" aria-hidden="true"></div>
+      <div class="hero__fade" aria-hidden="true"></div>
+
+      <div class="wrap hero__content">
+        <p class="eyebrow mono hero-fade"><i class="live-dot"></i> Available for projects &amp; training</p>
         <h1 class="hero__title">
-          20+ products.<br>One founder.<br><span class="grad">Zero bugs tolerated.</span>
+          <span class="line" data-split="hero-word">20+ products.</span>
+          <span class="line" data-split="hero-word">One founder.</span>
+          <span class="line grad" data-split="hero-word">Zero bugs tolerated.</span>
         </h1>
-        <p class="hero__role mono">
+        <p class="hero__role mono hero-fade">
           <span class="muted">$ whoami →</span>
-          <span class="typing" data-words='["Founder @ CTSS LLC","Serial Builder","QA Engineer","Maker of AdParcel","Maker of AwuCat","Maker of hibep","Lead Instructor @ CTSS Academy","Author of Kill All Bugs","Podcaster"]'>Founder @ CTSS LLC</span><span class="caret" aria-hidden="true"></span>
+          <span class="scramble" data-words='["Founder @ CTSS LLC","Serial Builder","QA Engineer","Maker of AdParcel","Maker of AwuCat","Maker of hibep","Lead Instructor @ CTSS Academy","Author of Kill All Bugs","Podcaster"]'>Founder @ CTSS LLC</span>
         </p>
-        <p class="hero__lead">
+        <p class="hero__lead hero-fade">
           Founder of <strong>CTSS LLC</strong> — a US-registered software &amp; edtech studio shipping products
           across legal tech, education, AI, health and ad tech. QA engineer at heart, educator by nature.
         </p>
-        <div class="hero__cta">
-          <a class="btn btn--grad" href="#ventures">See what I've built</a>
-          <a class="btn btn--ghost" href="https://drive.google.com/file/d/1RAXu-WdPyhhA6Zzs0o7XudlXvXZVAb4W/view?usp=sharing" target="_blank" rel="noopener">Download résumé ↗</a>
+        <div class="hero__cta hero-fade">
+          <a class="btn btn--grad btn--lg" data-magnetic data-cursor="Explore" href="#ventures">See what I've built <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost btn--lg" data-magnetic href="https://drive.google.com/file/d/1RAXu-WdPyhhA6Zzs0o7XudlXvXZVAb4W/view?usp=sharing" target="_blank" rel="noopener">Download résumé ↗</a>
         </div>
-        <ul class="socials" aria-label="Social profiles">
-          <li><a href="https://github.com/cantuncr" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a></li>
-          <li><a href="https://www.linkedin.com/in/cantuncr/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a></li>
-          <li><a href="https://www.youtube.com/@CTSSAcademy" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></a></li>
-          <li><a href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU" target="_blank" rel="noopener" aria-label="Podcast on Spotify"><svg viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm5.5 17.3a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.6 11.66 1.34.36.22.47.68.25 1.03Zm1.47-3.26a.94.94 0 0 1-1.29.31c-3.23-1.99-8.15-2.56-11.97-1.4a.94.94 0 1 1-.54-1.8c4.36-1.32 9.78-.68 13.49 1.6.44.27.58.85.31 1.29Zm.13-3.4C15.23 8.34 8.85 8.13 5.16 9.25a1.13 1.13 0 1 1-.65-2.16c4.23-1.28 11.28-1.03 15.73 1.61a1.13 1.13 0 0 1-1.15 1.94Z"/></svg></a></li>
-          <li><a href="https://medium.com/@cantuncr" target="_blank" rel="noopener" aria-label="Medium"><svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 1 1-13.6 0 6.8 6.8 0 0 1 13.6 0Zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.52-6.42 3.38-6.42 3.38 2.88 3.38 6.42ZM24 12c0 3.17-.53 5.75-1.19 5.75s-1.19-2.58-1.19-5.75.53-5.75 1.19-5.75S24 8.83 24 12Z"/></svg></a></li>
-          <li><a href="https://linktr.ee/cantuncr" target="_blank" rel="noopener" aria-label="All links (Linktree)"><svg viewBox="0 0 24 24"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l3.5-3.5a3 3 0 1 1 4.2 4.2l-2 2a1 1 0 0 1-1.4-1.4l2-2a1 1 0 0 0-1.4-1.4L12 13.4a1 1 0 0 1-1.4 0Zm2.8-2.8a1 1 0 0 1 0 1.4l-3.5 3.5a3 3 0 1 1-4.2-4.2l2-2a1 1 0 0 1 1.4 1.4l-2 2a1 1 0 0 0 1.4 1.4L12 10.6a1 1 0 0 1 1.4 0Z"/></svg></a></li>
+        <ul class="socials hero-fade" aria-label="Social profiles">
+          <li><a data-magnetic href="https://github.com/cantuncr" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a></li>
+          <li><a data-magnetic href="https://www.linkedin.com/in/cantuncr/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a></li>
+          <li><a data-magnetic href="https://www.youtube.com/@CTSSAcademy" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg></a></li>
+          <li><a data-magnetic href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU" target="_blank" rel="noopener" aria-label="Podcast on Spotify"><svg viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm5.5 17.3a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.11-10.55-1.16a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.6 11.66 1.34.36.22.47.68.25 1.03Zm1.47-3.26a.94.94 0 0 1-1.29.31c-3.23-1.99-8.15-2.56-11.97-1.4a.94.94 0 1 1-.54-1.8c4.36-1.32 9.78-.68 13.49 1.6.44.27.58.85.31 1.29Zm.13-3.4C15.23 8.34 8.85 8.13 5.16 9.25a1.13 1.13 0 1 1-.65-2.16c4.23-1.28 11.28-1.03 15.73 1.61a1.13 1.13 0 0 1-1.15 1.94Z"/></svg></a></li>
+          <li><a data-magnetic href="https://medium.com/@cantuncr" target="_blank" rel="noopener" aria-label="Medium"><svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 1 1-13.6 0 6.8 6.8 0 0 1 13.6 0Zm7.42 0c0 3.54-1.51 6.42-3.38 6.42S14.2 15.54 14.2 12s1.52-6.42 3.38-6.42 3.38 2.88 3.38 6.42ZM24 12c0 3.17-.53 5.75-1.19 5.75s-1.19-2.58-1.19-5.75.53-5.75 1.19-5.75S24 8.83 24 12Z"/></svg></a></li>
+          <li><a data-magnetic href="https://linktr.ee/cantuncr" target="_blank" rel="noopener" aria-label="All links (Linktree)"><svg viewBox="0 0 24 24"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l3.5-3.5a3 3 0 1 1 4.2 4.2l-2 2a1 1 0 0 1-1.4-1.4l2-2a1 1 0 0 0-1.4-1.4L12 13.4a1 1 0 0 1-1.4 0Zm2.8-2.8a1 1 0 0 1 0 1.4l-3.5 3.5a3 3 0 1 1-4.2-4.2l2-2a1 1 0 0 1 1.4 1.4l-2 2a1 1 0 0 0 1.4 1.4L12 10.6a1 1 0 0 1 1.4 0Z"/></svg></a></li>
         </ul>
       </div>
-      <a class="hero__scroll mono" href="#about" aria-label="Scroll to About">scroll ↓</a>
-    </section>
 
-    <!-- Product ticker -->
-    <div class="ticker" aria-hidden="true"><div class="ticker__track"><span>AdParcel</span><i>✦</i><span>AwuCat</span><i>✦</i><span>hakimlik.org</span><i>✦</i><span>hibep</span><i>✦</i><span>Dent-IS</span><i>✦</i><span>CoursePod.io</span><i>✦</i><span>dammn</span><i>✦</i><span>CTSS AI Assist</span><i>✦</i><span>CTSS Academy</span><i>✦</i><span>Kill All Bugs</span><i>✦</i><span>Teklify</span><i>✦</i><span>CertVerify</span><i>✦</i><span>koltukboş</span><i>✦</i><span>Çöpçatan</span><i>✦</i><span>Startup Mafia</span><i>✦</i><span>Code4Future</span><i>✦</i></div></div>
-
-    <!-- Stats strip -->
-    <section class="strip" aria-label="Highlights">
-      <div class="wrap strip__inner">
-        <div><strong class="grad" data-count="20" data-suffix="+">20+</strong><span>Products &amp; ventures</span></div>
-        <div><strong class="grad" data-count="270" data-suffix="K+">270K+</strong><span>AdParcel ad parcels</span></div>
-        <div><strong class="grad">USA · TR</strong><span>Wyoming-registered LLC, built in Ankara</span></div>
-        <div><strong class="grad" data-count="235">235</strong><span>Pages in my QA book</span></div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="wrap about">
-        <div class="about__photo reveal">
-          <img src="assets/img/me.jpg" alt="Portrait of Can Tuncer" width="375" height="487" loading="lazy">
-          <span class="about__tag mono">// ankara, tr</span>
-        </div>
-        <div class="about__body reveal">
-          <p class="kicker mono">01 — About</p>
-          <h2>Quality is not a phase.<br><span class="grad">It's a mindset.</span></h2>
-          <p>
-            I'm a builder. I run <strong>CTSS LLC</strong>, a Wyoming-registered software &amp; educational technology
-            studio, and ship my own products: a pixel-grid ad marketplace, an AI legal network for lawyers,
-            special-education software, a dental clinic OS, a white-label LMS and more.
-          </p>
-          <p>
-            Before and alongside all that, I'm a QA engineer — I've tested products for global brands like
-            Yum! Brands, led remote delivery teams, and designed a 6-month bootcamp that turns beginners into
-            job-ready testers. That's why everything I ship is <strong>QA-first</strong>.
-          </p>
-          <dl class="facts">
-            <div><dt>Based in</dt><dd>Ankara, Türkiye</dd></div>
-            <div><dt>Company</dt><dd>CTSS LLC · USA</dd></div>
-            <div><dt>Focus</dt><dd>Products · QA · EdTech</dd></div>
-            <div><dt>Open to</dt><dd class="ok">Projects &amp; partnerships</dd></div>
-          </dl>
-          <div class="chips">
-            <span>🎧 Music degustation</span><span>🎨 Visual design</span><span>🎥 Videography</span><span>🔭 Astronomy</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ventures -->
-    <section class="section section--alt" id="ventures">
-      <div class="wrap">
-        <header class="section__head reveal">
-          <p class="kicker mono">02 — Ventures</p>
-          <h2>The CTSS <span class="grad">universe.</span></h2>
-          <p class="section__sub">Everything I build lives under one roof. Legal tech, education, AI, health, ad tech and social — 11 live, more on the way.</p>
-        </header>
-
-        <div class="feature">
-          <a class="feature__main reveal" href="https://www.ct-ss.com" target="_blank" rel="noopener">
-            <span class="card__label mono">🇺🇸 Wyoming-registered · since 2020</span>
-            <h3>CTSS <span class="grad">LLC</span></h3>
-            <p>A software &amp; educational technology studio. We turn bold ideas into products people love — QA-first, from discovery to launch and scale.</p>
-            <div class="feature__stats">
-              <div><strong data-count="20" data-suffix="+">20+</strong><span>products &amp; ventures</span></div>
-              <div><strong>24/7</strong><span>support &amp; monitoring</span></div>
-              <div><strong>US · TR</strong><span>Sheridan, WY &amp; Ankara</span></div>
-            </div>
-            <span class="prod__url mono">ct-ss.com ↗</span>
-          </a>
-          <a class="feature__side reveal" href="https://adparcel.io" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="card__label mono">Ad Tech · flagship</span><span class="status status--live">Live</span></div>
-            <h3><span class="adparcel"><b>Ad</b>Parcel</span></h3>
-            <div class="feature__big"><strong class="grad" data-count="270" data-suffix="K+">270K+</strong><span>ad parcels on the grid</span></div>
-            <p>Pay once, advertise forever. Own, resell, auction or rent your ad space.</p>
-            <span class="prod__url mono">adparcel.io ↗</span>
-          </a>
-        </div>
-
-        <div class="filters reveal" role="group" aria-label="Filter ventures">
-          <button class="is-on" data-filter="all" aria-pressed="true">All <sup>16</sup></button>
-          <button data-filter="legal" aria-pressed="false">Legal tech</button>
-          <button data-filter="edu" aria-pressed="false">Education</button>
-          <button data-filter="ai" aria-pressed="false">AI</button>
-          <button data-filter="saas" aria-pressed="false">SaaS</button>
-          <button data-filter="health" aria-pressed="false">Health</button>
-          <button data-filter="social" aria-pressed="false">Social &amp; marketplace</button>
-          <button data-filter="media" aria-pressed="false">Media</button>
-        </div>
-
-        <div class="prods">
-          <a class="prod reveal" data-cat="legal ai" href="https://awucat.com" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">Aw</span><span class="status status--live">Live</span></div>
-            <h3>AwuCat</h3>
-            <span class="prod__tag mono">Legal Tech · AI</span>
-            <p>An AI-powered network for lawyers. Swipe, match and delegate cases — Turkey's first smart legal-delegation platform.</p>
-            <span class="prod__url mono">awucat.com ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="legal edu" href="https://hakimlik.org" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">Hk</span><span class="status status--live">Live</span></div>
-            <h3>hakimlik.org</h3>
-            <span class="prod__tag mono">EdTech · Exam prep</span>
-            <p>Exam prep for Turkey's judicial and legal-profession exams — lessons, question banks and nationwide mock exams.</p>
-            <span class="prod__url mono">hakimlik.org ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="edu" href="https://hibep.com" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">hb</span><span class="status status--live">Live</span></div>
-            <h3>hibep</h3>
-            <span class="prod__tag mono">EdTech · Special Ed</span>
-            <p>Cuts special-education paperwork — IEP plans, assessments and progress tracking — down to minutes, aligned with the national curriculum.</p>
-            <span class="prod__url mono">hibep.com ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="health saas" href="https://dent-is.com" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">Di</span><span class="status status--live">Live</span></div>
-            <h3>Dent-IS</h3>
-            <span class="prod__tag mono">HealthTech · SaaS</span>
-            <p>A clinic operating system for dental practices: appointments, patients, treatments and daily operations in one place.</p>
-            <span class="prod__url mono">dent-is.com ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="edu saas" href="https://coursepod.io" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">Cp</span><span class="status status--live">Live</span></div>
-            <h3>CoursePod.io</h3>
-            <span class="prod__tag mono">EdTech infrastructure</span>
-            <p>White-label LMS infrastructure to build, brand, launch and scale online learning at any size.</p>
-            <span class="prod__url mono">coursepod.io ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="ai saas" href="https://ctssaiassist.github.io" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">AI</span><span class="status status--live">Live</span></div>
-            <h3>CTSS AI Assist</h3>
-            <span class="prod__tag mono">Artificial Intelligence</span>
-            <p>AI chat &amp; voice agents that automate support, sales and engagement — set up in minutes, working 24/7.</p>
-            <span class="prod__url mono">ctssaiassist ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="social" href="https://dammn.club" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">dm</span><span class="status status--live">Live</span></div>
-            <h3>dammn</h3>
-            <span class="prod__tag mono">Nightlife · Social</span>
-            <p>An invite-only nightlife networking club that seats the right people at the right tables. Verified members, curated venues.</p>
-            <span class="prod__url mono">dammn.club ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="edu" href="https://ctssacademy.github.io" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">Ac</span><span class="status status--live">Live</span></div>
-            <h3>CTSS Academy</h3>
-            <span class="prod__tag mono">Education</span>
-            <p>Software-testing bootcamp, courses and content — taking learners from beginner to job-ready QA engineer.</p>
-            <span class="prod__url mono">ctssacademy ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="edu media" href="https://testingin1day.com" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">KB</span><span class="status status--live">Live</span></div>
-            <h3>Kill All Bugs</h3>
-            <span class="prod__tag mono">Publishing</span>
-            <p>My QA handbook — <em>Learn Software Testing in 1 Day</em>. A practical 235-page guide. One tree planted per copy sold.</p>
-            <span class="prod__url mono">testingin1day.com ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="media" href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU" target="_blank" rel="noopener">
-            <div class="prod__top"><span class="prod__logo mono">Pd</span><span class="status status--live">Live</span></div>
-            <h3>Kill All Bugs Podcast</h3>
-            <span class="prod__tag mono">Media · Podcast</span>
-            <p>Conversations on building, testing and shipping great products.</p>
-            <span class="prod__url mono">spotify · apple ↗</span>
-          </a>
-          <a class="prod reveal" data-cat="edu" href="mailto:info@ct-ss.com?subject=Code4Future">
-            <div class="prod__top"><span class="prod__logo mono">C4</span><span class="status status--live">Live</span></div>
-            <h3>Code4Future</h3>
-            <span class="prod__tag mono">Social impact · EU</span>
-            <p>A 100% free, EU-supported coding camp for teens aged 12–17 — equal access to programming for everyone.</p>
-            <span class="prod__url mono">info@ct-ss.com ↗</span>
-          </a>
-          <article class="prod prod--soon reveal" data-cat="saas">
-            <div class="prod__top"><span class="prod__logo mono">Tk</span><span class="status status--soon">Soon</span></div>
-            <h3>Teklify</h3>
-            <span class="prod__tag mono">SaaS · Sales</span>
-            <p>Quote &amp; proposal automation — build, send and track professional business proposals in minutes.</p>
-            <span class="prod__url mono muted">teklify.com</span>
-          </article>
-          <article class="prod prod--soon reveal" data-cat="saas">
-            <div class="prod__top"><span class="prod__logo mono">Cv</span><span class="status status--soon">Soon</span></div>
-            <h3>CertVerify</h3>
-            <span class="prod__tag mono">SaaS · Credentials</span>
-            <p>Issue and instantly verify digital certificates and credentials for organizations and institutions.</p>
-            <span class="prod__url mono muted">certverify.com</span>
-          </article>
-          <article class="prod prod--soon reveal" data-cat="social">
-            <div class="prod__top"><span class="prod__logo mono">kb</span><span class="status status--soon">Soon</span></div>
-            <h3>koltukboş</h3>
-            <span class="prod__tag mono">Marketplace</span>
-            <p>A platform for filling empty seats and last-minute spots in real time.</p>
-            <span class="prod__url mono muted">koltukbos.com</span>
-          </article>
-          <article class="prod prod--soon reveal" data-cat="social">
-            <div class="prod__top"><span class="prod__logo mono">Çç</span><span class="status status--soon">Soon</span></div>
-            <h3>Çöpçatan</h3>
-            <span class="prod__tag mono">Matchmaking</span>
-            <p>A matchmaking service, starting in Ankara.</p>
-            <span class="prod__url mono muted">Ankara only</span>
-          </article>
-          <article class="prod prod--soon reveal" data-cat="social">
-            <div class="prod__top"><span class="prod__logo mono">SM</span><span class="status status--soon">Soon</span></div>
-            <h3>Startup Mafia</h3>
-            <span class="prod__tag mono">Community</span>
-            <p>More on this one soon.</p>
-            
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="wrap">
-        <header class="section__head reveal">
-          <p class="kicker mono">03 — Services</p>
-          <h2>How I can <span class="grad">help you.</span></h2>
-          <p class="section__sub">Three ways to work together. Not sure which fits? <a class="link" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">Book a free intro call.</a></p>
-        </header>
-        <div class="services">
-          <article class="svc reveal">
-            <div class="svc__icon mono">01</div>
-            <h3>Quality &amp; Strategy</h3>
-            <p>Release with confidence and fewer production surprises.</p>
-            <ul>
-              <li><strong>QA consulting &amp; strategy</strong> — assess QA maturity, define test approaches, build a roadmap.</li>
-              <li><strong>Test automation</strong> — Selenium, Cucumber/BDD, API testing and CI pipelines.</li>
-              <li><strong>Technical architecture &amp; documentation</strong> — solid foundations everyone can build on.</li>
-            </ul>
-          </article>
-          <article class="svc reveal">
-            <div class="svc__icon mono">02</div>
-            <h3>Build</h3>
-            <p>From idea to shipped product, fast and lean.</p>
-            <ul>
-              <li><strong>MVP development for founders</strong> — plus mentorship on company setup &amp; go-to-market.</li>
-              <li><strong>Custom web apps</strong> and <strong>front-end takeover</strong> for stuck or ongoing projects.</li>
-              <li><strong>AI chatbot automation</strong> for sales, support and lead generation.</li>
-              <li><strong>Crypto token development</strong> — smart contracts on Ethereum, BNB Chain and more.</li>
-              <li><strong>Maintenance &amp; support</strong> — updates, bug fixes and performance.</li>
-            </ul>
-          </article>
-          <article class="svc reveal">
-            <div class="svc__icon mono">03</div>
-            <h3>Learn</h3>
-            <p>Start — or level up — a career in software testing.</p>
-            <ul>
-              <li><strong><a class="link" href="https://ctssacademy.github.io" target="_blank" rel="noopener">Software Testing Bootcamp</a></strong> — beginner to job-ready QA, no experience needed. <a class="link" href="https://drive.google.com/file/d/1MRjfoO7RPuLKtckB62wRmrQarxtQDZiR/view?usp=sharing" target="_blank" rel="noopener">Syllabus ↗</a></li>
-              <li><strong><a class="link" href="https://testingin1day.com" target="_blank" rel="noopener">Kill All Bugs eBook</a></strong> — QA fundamentals in a single day.</li>
-              <li><strong>ISTQB Foundation course</strong> on Udemy <span class="badge">Coming soon</span></li>
-              <li><strong>Corporate training</strong> for development &amp; QA teams.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="section section--alt" id="experience">
-      <div class="wrap">
-        <header class="section__head reveal">
-          <p class="kicker mono">04 — Experience</p>
-          <h2>Where I've <span class="grad">made an impact.</span></h2>
-        </header>
-
-        <ol class="timeline">
-          <li class="reveal">
-            <span class="tl__date mono">2020 — now</span>
-            <div>
-              <h3>Founder &amp; CEO <span class="at">CTSS LLC · Sheridan, WY (USA) &amp; Ankara</span></h3>
-              <p>Built a software &amp; edtech studio with 20+ products and ventures — AdParcel, AwuCat, hakimlik.org, hibep, Dent-IS, CoursePod.io and more. Own strategy, product, teams, budgets and investor relations; delivered client work like GizmoTourizm and an R&amp;D digitalization project with the Ankara Bar Association.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="tl__date mono">2024 — now</span>
-            <div>
-              <h3>Lead Instructor <span class="at">CTSS Academy · Ankara</span></h3>
-              <p>Designed and teach a 6-month software testing course — test design, bug reporting, Selenium, JUnit and Postman — with hands-on team projects, mentorship and assessments.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="tl__date mono">2024 — now</span>
-            <div>
-              <h3>Scrum Master &amp; Product Owner <span class="at">AdParcel</span></h3>
-              <p>Own the product vision and backlog, run the Scrum cadence and designed the pixel-space purchase model that became a key revenue stream.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="tl__date mono">Dec 2024 — Feb 2025</span>
-            <div>
-              <h3>Project Manager <span class="at">TNC Group · Remote / Belgrade</span></h3>
-              <p>Ran a 3-month project from scope to delivery with a cross-functional team — shipped on time and within budget.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="tl__date mono">Jun — Nov 2024</span>
-            <div>
-              <h3>QA Engineer <span class="at">Yum! Brands · Remote / Kentucky</span></h3>
-              <p>Test plans for web &amp; mobile, Selenium/Cypress automation, BDD with Cucumber &amp; Gherkin, API testing in Postman, and CI with Jenkins and GitLab.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="tl__date mono">Mar 2023 — Jun 2024</span>
-            <div>
-              <h3>Customer Success Strategist <span class="at">Arabica Coffee House · Ankara</span></h3>
-              <p>Coordinated daily operations and reached 100% customer satisfaction from the third month onward.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="tl__date mono">Feb — Jun 2023</span>
-            <div>
-              <h3>Front-end Developer <span class="at">YapiSepeti · Remote / Istanbul</span></h3>
-              <p>Built responsive admin and order panels with React and Tailwind, tested with Jest, Mocha and Cypress, and integrated Node.js APIs.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="tl__date mono">Oct 2020 — Jun 2021</span>
-            <div>
-              <h3>Volunteer Science Teacher <span class="at">Okul Destek Society</span></h3>
-              <p>Taught elementary and middle-school kids to discover rather than memorize, through hands-on lab activities.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="tl__date mono">Jun — Sep 2019</span>
-            <div>
-              <h3>Intern Computer Engineer <span class="at">Arvento Mobile Systems · Ankara</span></h3>
-              <p>R&amp;D on the "Arvento Kids" tracking device and the "Arvento Race" boat-racing platform.</p>
-            </div>
-          </li>
-        </ol>
-
-        <div class="twocol">
-          <div class="reveal">
-            <h3 class="minihead mono">Education</h3>
-            <ul class="plain">
-              <li><strong>B.Eng. Computer Engineering</strong><span>Kırıkkale University</span></li>
-              <li><strong>QA Testing Bootcamp</strong><span>NeoTech Academy · NY, USA</span></li>
-              <li><strong>B.Sc. Tourism, Recreation &amp; Leisure Management</strong><span>Ankara Hacı Bayram Veli University</span></li>
-            </ul>
-          </div>
-          <div class="reveal">
-            <h3 class="minihead mono">Certificates &amp; recognition</h3>
-            <ul class="plain">
-              <li><strong>Personal &amp; Professional Development</strong><span>Aspire Institute · Harvard University · 2024</span></li>
-              <li><strong>Twitch: Zero to Hero Front-End SpeedRun</strong><span>with freeCodeCamp · 2023</span></li>
-              <li><strong>Volunteer audiobook narration for the visually impaired</strong><span>GETEM · 2022</span></li>
-              <li><strong>Introduction to Python</strong><span>Global AI Hub · 2021</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section" id="skills">
-      <div class="wrap">
-        <header class="section__head reveal">
-          <p class="kicker mono">05 — Toolbox</p>
-          <h2>What I <span class="grad">work with.</span></h2>
-        </header>
-        <div class="skills">
-          <div class="reveal">
-            <h3 class="minihead mono">Testing &amp; QA</h3>
-            <div class="chips chips--code">
-              <span>Selenium</span><span>Java</span><span>TestNG</span><span>Cucumber / BDD</span><span>Cypress</span><span>Postman</span><span>API testing</span><span>Maven</span><span>SQL</span><span>Jenkins</span><span>GitLab CI</span><span>SDLC / STLC</span><span>Regression · Smoke · E2E</span>
-            </div>
-          </div>
-          <div class="reveal">
-            <h3 class="minihead mono">Front-end</h3>
-            <div class="chips chips--code">
-              <span>JavaScript</span><span>React</span><span>Redux</span><span>Tailwind CSS</span><span>HTML5 / CSS3</span><span>REST</span><span>GraphQL</span><span>Webpack</span><span>Jest</span><span>Lighthouse</span><span>Git / GitHub</span>
-            </div>
-          </div>
-          <div class="reveal">
-            <h3 class="minihead mono">Delivery &amp; leadership</h3>
-            <div class="chips chips--code">
-              <span>Scrum</span><span>Product ownership</span><span>Jira</span><span>Trello</span><span>Project management</span><span>Curriculum design</span><span>Mentoring</span><span>Public speaking</span>
-            </div>
-          </div>
+      <div class="hero__hud mono">
+        <div class="wrap hud__inner">
+          <span class="hud__scroll"><i><b></b></i>Scroll to explore</span>
+          <span class="hud__coords">39.9334° N / 32.8597° E</span>
+          <span class="hud__clock">Ankara · <time class="clock" data-tz="Europe/Istanbul">--:--:--</time></span>
         </div>
       </div>
     </section>
 
     <!-- Partners -->
-    <section class="section section--tight" aria-labelledby="partners-title">
-      <div class="wrap">
-        <p class="kicker mono center" id="partners-title">Partnered with industry leaders</p>
-      </div>
-      <div class="marquee" aria-hidden="false">
-        <div class="marquee__track">
+    <section class="partners" aria-labelledby="partners-title">
+      <p class="partners__title mono" id="partners-title">Partnered with industry leaders</p>
+      <div class="logos">
+        <div class="logos__track">
           <img src="assets/img/partners/american-expres.png" alt="American Express" loading="lazy">
           <img src="assets/img/partners/booz-allen-hamilton.png" alt="Booz Allen Hamilton" loading="lazy">
           <img src="assets/img/partners/oracle.png" alt="Oracle" loading="lazy">
@@ -506,27 +173,388 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section section--alt" id="testimonials">
+    <!-- Velocity marquee -->
+    <section class="vmq" aria-label="What I do">
+      <div class="vmq__row" aria-hidden="true"><div class="vmq__track"><span class="">Founder</span><b class="mq-dot"></b><span class="">QA Engineer</span><b class="mq-dot"></b><span class="">Educator</span><b class="mq-dot"></b><span class="">Author</span><b class="mq-dot"></b><span class="">Podcaster</span><b class="mq-dot"></b></div></div>
+      <div class="vmq__row" aria-hidden="true" data-reverse><div class="vmq__track"><span class="outline">AdParcel</span><b class="mq-dot"></b><span class="outline">AwuCat</span><b class="mq-dot"></b><span class="outline">hibep</span><b class="mq-dot"></b><span class="outline">Dent-IS</span><b class="mq-dot"></b><span class="outline">CoursePod</span><b class="mq-dot"></b><span class="outline">hakimlik.org</span><b class="mq-dot"></b><span class="outline">dammn</span><b class="mq-dot"></b></div></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
       <div class="wrap">
-        <header class="section__head reveal">
-          <p class="kicker mono">06 — Kind words</p>
-          <h2>What people <span class="grad">say.</span></h2>
-        </header>
+        <p class="kicker mono fade-up"><i></i>01 — About</p>
+        <p class="read" data-read>I'm a builder. I run CTSS LLC, a Wyoming-registered software &amp; educational technology studio, and ship my own products: a pixel-grid ad marketplace, an AI legal network for lawyers, special-education software, a dental clinic OS, a white-label LMS and more. Before and alongside all that, I'm a QA engineer — so everything I ship is quality-first.</p>
+
+        <div class="about">
+          <figure class="about__photo">
+            <div class="about__clip"><img src="assets/img/bg.jpg" alt="Can Tuncer in the brand's violet and orange duotone" loading="lazy"></div>
+            <figcaption class="mono">// can tuncer — ankara, tr</figcaption>
+          </figure>
+          <div class="about__body">
+            <h2 class="h2" data-split>Quality is not a phase. <span class="grad">It's a mindset.</span></h2>
+            <p class="fade-up">I've tested products for global brands like Yum! Brands, led remote delivery teams across the US, EU and Türkiye, and designed a 6-month bootcamp that turns beginners into job-ready testers. Agile at heart, teacher by nature, founder by choice.</p>
+            <dl class="facts">
+              <div class="fade-up"><dt class="mono">Based in</dt><dd>Ankara, Türkiye</dd></div>
+              <div class="fade-up"><dt class="mono">Company</dt><dd>CTSS LLC · USA</dd></div>
+              <div class="fade-up"><dt class="mono">Focus</dt><dd>Products · QA · EdTech</dd></div>
+              <div class="fade-up"><dt class="mono">Open to</dt><dd class="ok">Projects &amp; partnerships</dd></div>
+            </dl>
+            <div class="chips fade-up">
+              <span>🎧 Music degustation</span><span>🎨 Visual design</span><span>🎥 Videography</span><span>🔭 Astronomy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ventures (pinned horizontal) -->
+    <section class="ventures" id="ventures">
+      <div class="h-pin">
+        <div class="wrap h-head">
+          <div>
+            <p class="kicker mono fade-up"><i></i>02 — Ventures</p>
+            <h2 class="h2" data-split>The CTSS <span class="outline-brand">universe.</span></h2>
+          </div>
+          <div class="h-count fade-up">
+            <strong>18</strong>
+            <span class="mono">ventures under one roof — scroll →</span>
+          </div>
+        </div>
+
+        <div class="h-viewport">
+          <div class="h-track">
+            <a class="h-card h-card--hero spot" data-cursor="Visit" href="https://www.ct-ss.com" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>01 / 18</span><span class="pill pill--live"><i></i>Since 2020</span></div>
+              <p class="h-card__tag mono">🇺🇸 Wyoming-registered studio</p>
+              <h3>CTSS <span class="grad">LLC</span></h3>
+              <p class="h-card__desc">A software &amp; educational technology studio. We turn bold ideas into products people love — QA-first, from discovery to launch and scale.</p>
+              <div class="h-card__stats">
+                <div><strong class="counter" data-to="20" data-suffix="+">20+</strong><span class="mono">ventures</span></div>
+                <div><strong>24/7</strong><span class="mono">monitoring</span></div>
+                <div><strong>US·TR</strong><span class="mono">WY &amp; Ankara</span></div>
+              </div>
+              <div class="h-card__foot"><span class="mono">ct-ss.com</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card h-card--ad spot" data-cursor="Open" href="https://adparcel.io" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>02 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <p class="h-card__tag mono">Ad Tech · flagship</p>
+              <h3><span class="adparcel"><b>Ad</b>Parcel</span></h3>
+              <div class="h-card__big"><strong class="grad counter" data-to="270" data-suffix="K+">270K+</strong><span class="mono">ad parcels on the grid</span></div>
+              <p class="h-card__desc">Pay once, advertise forever. Own, resell, auction or rent your ad space.</p>
+              <div class="h-card__foot"><span class="mono">adparcel.io</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://awucat.com" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>03 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">Aw</span>
+              <p class="h-card__tag mono">Legal Tech · AI</p>
+              <h3>AwuCat</h3>
+              <p class="h-card__desc">An AI-powered network for lawyers. Swipe, match and delegate cases — Turkey's first smart legal-delegation platform.</p>
+              <div class="h-card__foot"><span class="mono">awucat.com</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://hakimlik.org" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>04 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">Hk</span>
+              <p class="h-card__tag mono">EdTech · Exam prep</p>
+              <h3>hakimlik.org</h3>
+              <p class="h-card__desc">Exam prep for Turkey's judicial and legal-profession exams — lessons, question banks and nationwide mock exams.</p>
+              <div class="h-card__foot"><span class="mono">hakimlik.org</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://hibep.com" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>05 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">hb</span>
+              <p class="h-card__tag mono">EdTech · Special Ed</p>
+              <h3>hibep</h3>
+              <p class="h-card__desc">Cuts special-education paperwork — IEP plans, assessments and progress tracking — down to minutes, aligned with the national curriculum.</p>
+              <div class="h-card__foot"><span class="mono">hibep.com</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://dent-is.com" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>06 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">Di</span>
+              <p class="h-card__tag mono">HealthTech · SaaS</p>
+              <h3>Dent-IS</h3>
+              <p class="h-card__desc">A clinic operating system for dental practices: appointments, patients, treatments and daily operations in one place.</p>
+              <div class="h-card__foot"><span class="mono">dent-is.com</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://coursepod.io" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>07 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">Cp</span>
+              <p class="h-card__tag mono">EdTech infrastructure</p>
+              <h3>CoursePod.io</h3>
+              <p class="h-card__desc">White-label LMS infrastructure to build, brand, launch and scale online learning at any size.</p>
+              <div class="h-card__foot"><span class="mono">coursepod.io</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://ctssaiassist.github.io" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>08 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">AI</span>
+              <p class="h-card__tag mono">Artificial Intelligence</p>
+              <h3>CTSS AI Assist</h3>
+              <p class="h-card__desc">AI chat &amp; voice agents that automate support, sales and engagement — set up in minutes, working 24/7.</p>
+              <div class="h-card__foot"><span class="mono">ctssaiassist</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://dammn.club" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>09 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">dm</span>
+              <p class="h-card__tag mono">Nightlife · Social</p>
+              <h3>dammn</h3>
+              <p class="h-card__desc">An invite-only nightlife networking club that seats the right people at the right tables. Verified members, curated venues.</p>
+              <div class="h-card__foot"><span class="mono">dammn.club</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://ctssacademy.github.io" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>10 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">Ac</span>
+              <p class="h-card__tag mono">Education</p>
+              <h3>CTSS Academy</h3>
+              <p class="h-card__desc">Software-testing bootcamp, courses and content — taking learners from beginner to job-ready QA engineer.</p>
+              <div class="h-card__foot"><span class="mono">ctssacademy</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://testingin1day.com" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>11 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">KB</span>
+              <p class="h-card__tag mono">Publishing</p>
+              <h3>Kill All Bugs</h3>
+              <p class="h-card__desc">My QA handbook — <em>Learn Software Testing in 1 Day</em>. A practical 235-page guide. One tree planted per copy sold.</p>
+              <div class="h-card__foot"><span class="mono">testingin1day.com</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="https://open.spotify.com/show/0jLBnYYl9r2v9BQrmjVDeU" target="_blank" rel="noopener">
+              <div class="h-card__top mono"><span>12 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">Pd</span>
+              <p class="h-card__tag mono">Media · Podcast</p>
+              <h3>Kill All Bugs Podcast</h3>
+              <p class="h-card__desc">Conversations on building, testing and shipping great products. On Spotify and Apple Podcasts.</p>
+              <div class="h-card__foot"><span class="mono">spotify · apple</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <a class="h-card spot" data-cursor="Open" href="mailto:info@ct-ss.com?subject=Code4Future">
+              <div class="h-card__top mono"><span>13 / 18</span><span class="pill pill--live"><i></i>Live</span></div>
+              <span class="h-card__logo mono">C4</span>
+              <p class="h-card__tag mono">Social impact · EU</p>
+              <h3>Code4Future</h3>
+              <p class="h-card__desc">A 100% free, EU-supported coding camp for teens aged 12–17 — equal access to programming for everyone.</p>
+              <div class="h-card__foot"><span class="mono">info@ct-ss.com</span><span class="h-card__go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+            </a>
+            <article class="h-card h-card--soon spot">
+              <div class="h-card__top mono"><span>14 / 18</span><span class="pill pill--soon">Coming soon</span></div>
+              <span class="h-card__logo mono">SM</span>
+              <p class="h-card__tag mono">Startups · Mentorship</p>
+              <h3>Startup Mafia</h3>
+              <p class="h-card__desc">The MVP &amp; startup support program behind CTSS — idea to market-ready product, with mentorship and go-to-market guidance.</p>
+              <div class="h-card__foot"><span class="mono">coming soon</span></div>
+            </article>
+            <article class="h-card h-card--soon spot">
+              <div class="h-card__top mono"><span>15 / 18</span><span class="pill pill--soon">Coming soon</span></div>
+              <span class="h-card__logo mono">Tk</span>
+              <p class="h-card__tag mono">SaaS · Sales</p>
+              <h3>Teklify</h3>
+              <p class="h-card__desc">Quote &amp; proposal automation — build, send and track professional business proposals in minutes.</p>
+              <div class="h-card__foot"><span class="mono">teklify.com</span></div>
+            </article>
+            <article class="h-card h-card--soon spot">
+              <div class="h-card__top mono"><span>16 / 18</span><span class="pill pill--soon">Coming soon</span></div>
+              <span class="h-card__logo mono">Cv</span>
+              <p class="h-card__tag mono">SaaS · Credentials</p>
+              <h3>CertVerify</h3>
+              <p class="h-card__desc">Issue and instantly verify digital certificates and credentials for organizations and institutions.</p>
+              <div class="h-card__foot"><span class="mono">certverify.com</span></div>
+            </article>
+            <article class="h-card h-card--soon spot">
+              <div class="h-card__top mono"><span>17 / 18</span><span class="pill pill--soon">Coming soon</span></div>
+              <span class="h-card__logo mono">kb</span>
+              <p class="h-card__tag mono">Marketplace</p>
+              <h3>koltukboş</h3>
+              <p class="h-card__desc">A platform for filling empty seats and last-minute spots in real time.</p>
+              <div class="h-card__foot"><span class="mono">koltukbos.com</span></div>
+            </article>
+            <article class="h-card h-card--soon spot">
+              <div class="h-card__top mono"><span>18 / 18</span><span class="pill pill--soon">Coming soon</span></div>
+              <span class="h-card__logo mono">Çç</span>
+              <p class="h-card__tag mono">Matchmaking</p>
+              <h3>Çöpçatan</h3>
+              <p class="h-card__desc">A matchmaking service, starting in Ankara.</p>
+              <div class="h-card__foot"><span class="mono">ankara</span></div>
+            </article>
+            <a class="h-card h-card--cta" data-cursor="Book" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">
+              <span class="mono">Next / ∞</span>
+              <div>
+                <p class="h-card__cta">Your product could be next.</p>
+                <p class="h-card__ctalink">Book a call →</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="wrap"><div class="h-progress"><div></div></div></div>
+      </div>
+    </section>
+
+    <!-- Services (stacked cards) -->
+    <section class="section services" id="services">
+      <div class="wrap">
+        <p class="kicker mono fade-up"><i></i>03 — Services</p>
+        <h2 class="h2 h2--wide" data-split>How I can help you — <span class="grad">from idea to live product.</span></h2>
+        <p class="sub fade-up">Three ways to work together. Not sure which fits? <a class="link" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">Book a free intro call.</a></p>
+
+        <div class="stack">
+          <article class="stack-card" style="--i:0">
+            <div class="stack-inner spot">
+              <div class="stack-shade" aria-hidden="true"></div>
+              <div class="stack-grid">
+                <div>
+                  <p class="stack-num outline">01</p>
+                  <h3>Quality &amp; Strategy</h3>
+                  <p class="stack-lead">Release with confidence and fewer production surprises.</p>
+                </div>
+                <ul>
+                  <li><strong>QA consulting &amp; strategy</strong> — assess QA maturity, define test approaches, build a roadmap.</li>
+                  <li><strong>Test automation</strong> — Selenium, Cucumber/BDD, API testing and CI pipelines.</li>
+                  <li><strong>Technical architecture &amp; documentation</strong> — solid foundations everyone can build on.</li>
+                </ul>
+              </div>
+              <div class="chips chips--mono"><span>Automation</span><span>Strategy</span><span>CI/CD</span><span>Audits</span></div>
+            </div>
+          </article>
+          <article class="stack-card" style="--i:1">
+            <div class="stack-inner spot">
+              <div class="stack-shade" aria-hidden="true"></div>
+              <div class="stack-grid">
+                <div>
+                  <p class="stack-num outline">02</p>
+                  <h3>Build</h3>
+                  <p class="stack-lead">From idea to shipped product, fast and lean.</p>
+                </div>
+                <ul>
+                  <li><strong>MVP development for founders</strong> — plus mentorship on company setup &amp; go-to-market, powered by Startup Mafia.</li>
+                  <li><strong>Custom web apps</strong> and <strong>front-end takeover</strong> for stuck or ongoing projects.</li>
+                  <li><strong>AI chatbot automation</strong> for sales, support and lead generation.</li>
+                  <li><strong>Crypto token development</strong> — smart contracts on Ethereum, BNB Chain and more.</li>
+                  <li><strong>Maintenance &amp; support</strong> — updates, bug fixes and performance.</li>
+                </ul>
+              </div>
+              <div class="chips chips--mono"><span>MVP</span><span>Web apps</span><span>AI agents</span><span>Web3</span></div>
+            </div>
+          </article>
+          <article class="stack-card" style="--i:2">
+            <div class="stack-inner spot">
+              <div class="stack-shade" aria-hidden="true"></div>
+              <div class="stack-grid">
+                <div>
+                  <p class="stack-num outline">03</p>
+                  <h3>Learn</h3>
+                  <p class="stack-lead">Start — or level up — a career in software testing.</p>
+                </div>
+                <ul>
+                  <li><strong><a class="link" href="https://ctssacademy.github.io" target="_blank" rel="noopener">Software Testing Bootcamp</a></strong> — beginner to job-ready QA, no experience needed. <a class="link" href="https://drive.google.com/file/d/1MRjfoO7RPuLKtckB62wRmrQarxtQDZiR/view?usp=sharing" target="_blank" rel="noopener">Syllabus ↗</a></li>
+                  <li><strong><a class="link" href="https://testingin1day.com" target="_blank" rel="noopener">Kill All Bugs eBook</a></strong> — QA fundamentals in a single day.</li>
+                  <li><strong>ISTQB Foundation course</strong> on Udemy <span class="pill pill--soon">Coming soon</span></li>
+                  <li><strong>Corporate training</strong> for development &amp; QA teams.</li>
+                </ul>
+              </div>
+              <div class="chips chips--mono"><span>Bootcamps</span><span>Corporate</span><span>Content</span><span>Mentoring</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process (pinned, line draws) -->
+    <section class="process">
+      <div class="process-pin">
+        <div class="wrap">
+          <p class="kicker mono fade-up"><i></i>How I work</p>
+          <h2 class="h2" data-split>A clear, <span class="outline-brand">transparent</span> process.</h2>
+          <div class="proc">
+            <div class="proc-rail" aria-hidden="true"><div class="proc-line"></div></div>
+            <ol>
+              <li class="proc-step"><div class="proc-node"></div><p class="mono">01</p><h3>Discover</h3><p>We align on goals, scope and requirements together before a line of code is written.</p></li>
+              <li class="proc-step"><div class="proc-node"></div><p class="mono">02</p><h3>Design</h3><p>Flows, interface and prototype bring the product to life and confirm direction early.</p></li>
+              <li class="proc-step"><div class="proc-node"></div><p class="mono">03</p><h3>Build &amp; Test</h3><p>Agile sprints with a QA-first discipline guarantee quality from the very first commit.</p></li>
+              <li class="proc-step"><div class="proc-node"></div><p class="mono">04</p><h3>Launch &amp; Scale</h3><p>We ship, measure and continuously improve — staying with you as you grow.</p></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <p class="kicker mono fade-up"><i></i>04 — Experience</p>
+        <h2 class="h2" data-split>Where I've <span class="grad">made an impact.</span></h2>
+        <ol class="tl">
+          <li class="tl__line" aria-hidden="true"><div></div></li>
+          <li class="tl__item"><span class="tl__date mono">2020 — now</span><div><h3>Founder &amp; CEO <span class="at">CTSS LLC · Sheridan, WY (USA) &amp; Ankara</span></h3><p>Built a software &amp; edtech studio with 20+ products and ventures — AdParcel, AwuCat, hakimlik.org, hibep, Dent-IS, CoursePod.io and more. Own strategy, product, teams, budgets and investor relations; delivered client work like GizmoTourizm and an R&amp;D digitalization project with the Ankara Bar Association.</p></div></li>
+          <li class="tl__item"><span class="tl__date mono">2024 — now</span><div><h3>Lead Instructor <span class="at">CTSS Academy · Ankara</span></h3><p>Designed and teach a 6-month software testing course — test design, bug reporting, Selenium, JUnit and Postman — with hands-on team projects, mentorship and assessments.</p></div></li>
+          <li class="tl__item"><span class="tl__date mono">2024 — now</span><div><h3>Scrum Master &amp; Product Owner <span class="at">AdParcel</span></h3><p>Own the product vision and backlog, run the Scrum cadence and designed the pixel-space purchase model that became a key revenue stream.</p></div></li>
+          <li class="tl__item"><span class="tl__date mono">Dec 2024 — Feb 2025</span><div><h3>Project Manager <span class="at">TNC Group · Remote / Belgrade</span></h3><p>Ran a 3-month project from scope to delivery with a cross-functional team — shipped on time and within budget.</p></div></li>
+          <li class="tl__item"><span class="tl__date mono">Jun — Nov 2024</span><div><h3>QA Engineer <span class="at">Yum! Brands · Remote / Kentucky</span></h3><p>Test plans for web &amp; mobile, Selenium/Cypress automation, BDD with Cucumber &amp; Gherkin, API testing in Postman, and CI with Jenkins and GitLab.</p></div></li>
+          <li class="tl__item"><span class="tl__date mono">Mar 2023 — Jun 2024</span><div><h3>Customer Success Strategist <span class="at">Arabica Coffee House · Ankara</span></h3><p>Coordinated daily operations and reached 100% customer satisfaction from the third month onward.</p></div></li>
+          <li class="tl__item"><span class="tl__date mono">Feb — Jun 2023</span><div><h3>Front-end Developer <span class="at">YapiSepeti · Remote / Istanbul</span></h3><p>Built responsive admin and order panels with React and Tailwind, tested with Jest, Mocha and Cypress, and integrated Node.js APIs.</p></div></li>
+          <li class="tl__item"><span class="tl__date mono">Oct 2020 — Jun 2021</span><div><h3>Volunteer Science Teacher <span class="at">Okul Destek Society</span></h3><p>Taught elementary and middle-school kids to discover rather than memorize, through hands-on lab activities.</p></div></li>
+          <li class="tl__item"><span class="tl__date mono">Jun — Sep 2019</span><div><h3>Intern Computer Engineer <span class="at">Arvento Mobile Systems · Ankara</span></h3><p>R&amp;D on the "Arvento Kids" tracking device and the "Arvento Race" boat-racing platform.</p></div></li>
+        </ol>
+
+        <div class="twocol">
+          <div class="fade-up">
+            <h3 class="minihead mono">Education</h3>
+            <ul class="plain">
+              <li><strong>B.Eng. Computer Engineering</strong><span>Kırıkkale University</span></li>
+              <li><strong>QA Testing Bootcamp</strong><span>NeoTech Academy · NY, USA</span></li>
+              <li><strong>B.Sc. Tourism, Recreation &amp; Leisure Management</strong><span>Ankara Hacı Bayram Veli University</span></li>
+            </ul>
+          </div>
+          <div class="fade-up">
+            <h3 class="minihead mono">Certificates &amp; recognition</h3>
+            <ul class="plain">
+              <li><strong>Personal &amp; Professional Development</strong><span>Aspire Institute · Harvard University · 2024</span></li>
+              <li><strong>Twitch: Zero to Hero Front-End SpeedRun</strong><span>with freeCodeCamp · 2023</span></li>
+              <li><strong>Volunteer audiobook narration for the visually impaired</strong><span>GETEM · 2022</span></li>
+              <li><strong>Introduction to Python</strong><span>Global AI Hub · 2021</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toolbox -->
+    <section class="section section--tight" id="skills">
+      <div class="wrap">
+        <p class="kicker mono fade-up"><i></i>05 — Toolbox</p>
+        <h2 class="h2" data-split>What I <span class="grad">work with.</span></h2>
+        <div class="skills">
+          <div class="fade-up"><h3 class="minihead mono">Testing &amp; QA</h3><div class="chips chips--mono"><span>Selenium</span><span>Java</span><span>TestNG</span><span>Cucumber / BDD</span><span>Cypress</span><span>Postman</span><span>API testing</span><span>Maven</span><span>SQL</span><span>Jenkins</span><span>GitLab CI</span><span>SDLC / STLC</span><span>Regression · Smoke · E2E</span></div></div>
+          <div class="fade-up"><h3 class="minihead mono">Front-end</h3><div class="chips chips--mono"><span>JavaScript</span><span>React</span><span>Redux</span><span>Tailwind CSS</span><span>HTML5 / CSS3</span><span>REST</span><span>GraphQL</span><span>Webpack</span><span>Jest</span><span>Lighthouse</span><span>Git / GitHub</span></div></div>
+          <div class="fade-up"><h3 class="minihead mono">Delivery &amp; leadership</h3><div class="chips chips--mono"><span>Scrum</span><span>Product ownership</span><span>Jira</span><span>Trello</span><span>Project management</span><span>Curriculum design</span><span>Mentoring</span><span>Public speaking</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" aria-label="Highlights">
+      <div class="wrap stats__grid">
+        <div class="fade-up"><strong class="grad counter" data-to="20" data-suffix="+">20+</strong><span class="mono">Products &amp; ventures</span></div>
+        <div class="fade-up"><strong class="grad counter" data-to="270" data-suffix="K+">270K+</strong><span class="mono">AdParcel ad parcels</span></div>
+        <div class="fade-up"><strong class="grad">USA·TR</strong><span class="mono">Wyoming LLC, built in Ankara</span></div>
+        <div class="fade-up"><strong class="grad counter" data-to="235">235</strong><span class="mono">Pages in my QA book</span></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="wrap">
+        <p class="kicker mono fade-up"><i></i>06 — Kind words</p>
+        <h2 class="h2" data-split>What people <span class="grad">say.</span></h2>
         <div class="quotes">
-          <figure class="quote reveal">
+          <figure class="quote fade-up spot">
             <blockquote>“He is a person I mentored at the beginning of his adventure and enjoyed it immensely. He loves his job and you can tell it from his eyes.”</blockquote>
             <figcaption><img src="assets/img/testimonials/nilay.jpg" alt="" loading="lazy"><span><strong>Nilay Türktekin</strong>Computer Engineer</span></figcaption>
           </figure>
-          <figure class="quote reveal">
+          <figure class="quote fade-up spot">
             <blockquote>“Besides being a stand-alone team, he is a very good team player. He's a total playmaker. I very much enjoy working with him.”</blockquote>
             <figcaption><img src="assets/img/testimonials/hasan.jpg" alt="" loading="lazy"><span><strong>Hasan Said Sertkaya</strong>Computer Engineer</span></figcaption>
           </figure>
-          <figure class="quote reveal">
+          <figure class="quote fade-up spot">
             <blockquote>“In addition to being successful in his field, he is a multidisciplinary character. This reflects in his work.”</blockquote>
             <figcaption><img src="assets/img/testimonials/gokhan.jpg" alt="" loading="lazy"><span><strong>Gökhan Kuş</strong>Computer Engineer</span></figcaption>
           </figure>
-          <figure class="quote reveal">
+          <figure class="quote fade-up spot">
             <blockquote>“A person who is successful in his job, can paint your imagination, and enjoys his work very much.”</blockquote>
             <figcaption><img src="assets/img/testimonials/aylin.jpg" alt="" loading="lazy"><span><strong>Aylin Karslı</strong>Lawyer</span></figcaption>
           </figure>
@@ -535,35 +563,41 @@
     </section>
 
     <!-- Contact -->
-    <section class="section contact" id="contact">
+    <section class="contact" id="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
       <div class="wrap">
-        <div class="contact__hero reveal">
-          <p class="kicker mono">07 — Contact</p>
-          <h2>Got a product that<br><span class="grad">needs to just work?</span></h2>
-          <p class="section__sub">Projects, training, speaking or podcast collaborations — I usually reply within a day.</p>
-          <div class="hero__cta">
-            <a class="btn btn--grad" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">Book a meeting</a>
-            <a class="btn btn--ghost" href="mailto:cantuncr@gmail.com">cantuncr@gmail.com</a>
+        <p class="kicker mono fade-up"><i></i>07 — Contact</p>
+        <h2 class="cta-big">Got a product that<br><span class="outline-brand">needs to just</span> <span class="grad">work?</span></h2>
+        <div class="contact__row">
+          <a class="cta-orb" data-magnetic="0.4" data-cursor="Book" href="https://calendly.com/cantuncr/new-meeting" target="_blank" rel="noopener">
+            <span>Book<br>a call</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+          <div class="contact__grid">
+            <a class="ccard fade-up spot" href="mailto:cantuncr@gmail.com"><span class="mono">Email</span><strong>cantuncr@gmail.com</strong></a>
+            <a class="ccard fade-up spot" href="mailto:cantuncer@ct-ss.com"><span class="mono">Business email</span><strong>cantuncer@ct-ss.com</strong></a>
+            <a class="ccard fade-up spot" href="https://wa.me/905397447498" target="_blank" rel="noopener"><span class="mono">WhatsApp / phone</span><strong>+90 539 744 74 98</strong></a>
+            <a class="ccard fade-up spot" href="mailto:ctssacademy@gmail.com"><span class="mono">Podcast ads &amp; collabs</span><strong>ctssacademy@gmail.com</strong></a>
           </div>
         </div>
-        <div class="contact__grid">
-          <a class="ccard reveal" href="mailto:cantuncer@ct-ss.com"><span class="mono">Business email</span><strong>cantuncer@ct-ss.com</strong></a>
-          <a class="ccard reveal" href="https://wa.me/905397447498" target="_blank" rel="noopener"><span class="mono">WhatsApp / phone</span><strong>+90 539 744 74 98</strong></a>
-          <a class="ccard reveal" href="mailto:ctssacademy@gmail.com"><span class="mono">Podcast ads &amp; collabs</span><strong>ctssacademy@gmail.com</strong></a>
-          <a class="ccard reveal" href="https://testingin1day.com" target="_blank" rel="noopener"><span class="mono">Buy my book</span><strong>Kill All Bugs ↗</strong></a>
-        </div>
+        <p class="sub fade-up">Projects, training, speaking or podcast collaborations — I usually reply within a day.</p>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <div class="wrap footer__inner">
-      <a class="brand" href="#top"><span class="brand__mark" aria-hidden="true">&lt;/&gt;</span><span class="brand__name">can<span class="grad">tuncer</span></span></a>
-      <p class="mono muted">© <span id="year">2026</span> Can Tuncer · Built with care in Ankara · <span class="grad">kill all bugs.</span></p>
+    <div class="wrap footer__row mono">
+      <span>© <span id="year">2026</span> Can Tuncer · Founder of CTSS LLC</span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+      <span>Built with care in Ankara · <span class="grad">kill all bugs.</span></span>
     </div>
+    <div class="footer-mark" aria-hidden="true">can<span class="outline-brand">tuncer</span></div>
   </footer>
 
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
   <script src="assets/js/site.js" defer></script>
+  <script type="module" src="assets/js/universe.js"></script>
 </body>
 </html>
