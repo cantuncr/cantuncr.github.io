@@ -1,8 +1,8 @@
-# [cantuncr.github.io](https://cantuncr.github.io/)
+# [cantuncer.me](https://cantuncer.me/)
 
 Personal site of **Can Tuncer** — founder of CTSS LLC, QA engineer and educator.
 
-Static HTML/CSS/JS, no build step — served directly by GitHub Pages.
+Static HTML/CSS/JS, no build step — served by GitHub Pages at the custom domain in `CNAME`.
 
 ```
 index.html              single-page site

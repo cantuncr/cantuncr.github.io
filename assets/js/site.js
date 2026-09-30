@@ -394,7 +394,7 @@
     const suffix = el.dataset.suffix || '';
     const o = { v: 0 };
     el.textContent = `0${suffix}`;
-    gsap.to(o, { v: to, duration: 2, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 95%', once: true }, onUpdate: () => { el.textContent = `${Math.round(o.v)}${suffix}`; } });
+    gsap.to(o, { v: to, duration: 2, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 95%', once: true }, onUpdate: () => { el.textContent = `${Math.round(o.v).toLocaleString("en-US")}${suffix}`; } });
   });
 
   // Pins depend on final font metrics
